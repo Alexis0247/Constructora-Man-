@@ -27,6 +27,7 @@ body {
 .navbar {
     display: flex;
     margin-right: 10px;
+    margin-top: 25px;
 
 }
 .logo{
@@ -49,9 +50,10 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
+    transition: color 0.4s;
 }
 .navbar a:hover {
-    background: #196e23;
+    color: green;
 }
 .header {
     height: 115vh !important; /* cambia el tamaño de la seccion principal*/
@@ -87,6 +89,7 @@ p {
     margin-bottom: 40px;
     font-size: 18px;
     color: white;
+    line-height: 2;
 
 }
 .btn {
@@ -114,22 +117,40 @@ p {
     align-items: center;
 }
 .content-aun-no-se {
-    padding: 30px;
+    padding: 130px;
     background: #1e1e1e;
-    height: 100vb !important;
+    height: 120vb !important;
 }
 .content-about{
-    padding: 30px;
+    padding: 120px;
     background: #949494;
-    height: 100vb !important;
+    height: 70vb !important;
 }
+.content-more {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+.image-container img{
+    max-width: 40%;
+}
+
+.content-more p{
+    width: 50%;
+    padding-left: 50px;
+}
+
 .content-more{
-    padding: 30px;
+    padding: 100px;
     background: #1e1e1e;
     height: 100vb !important;
+    
 }
 .content-contact{
-    padding: 30px;
+    padding: 100px;
     background: #949494;
     height: 100vb !important;
 }
@@ -147,4 +168,33 @@ p {
     bottom: 0; /* Alinea el marco al fondo de la página */
     z-index: 999; /* Asegura que esté por encima de otros elementos */
     border-top: 1px solid #ccc; /* Agrega un borde superior opcional */
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.box-container .box{
+    height: 11rem;
+    width: 17rem;
+    background: #949494;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 5rem rgb(0, 0, 0 .5);
+    margin: 2rem;
+}
+
+@media (max-width: 768px){
+    .title{
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau{
+        height: 120vh;
+    }
+
+    .navbar{
+        display: none;
+    }
 }
