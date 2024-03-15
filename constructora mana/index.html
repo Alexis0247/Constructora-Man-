@@ -20,20 +20,22 @@
         </nav>
     </div>
     <header class="content header">
-        <h2 class="title">Constructora Maná</h2>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur 
-            adipisicing elit. Ipsa, rem. Veritatis, 
-            quidem necessitatibus fugit ipsa ipsum 
-            maiores non doloribus mollitia iusto, 
-            molestias totam quisquam quis, harum 
-            accusamus voluptate illum nihil.
-        </p>
-        <div class="btn-home">
-            <a href="#" class="btn">Contactanos</a>
+        <div class="header-content">
+            <h2 class="title principal">Constructora Maná</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur 
+                adipisicing elit. Ipsa, rem. Veritatis, 
+                quidem necessitatibus fugit ipsa ipsum 
+                maiores non doloribus mollitia iusto, 
+                molestias totam quisquam quis, harum 
+                accusamus voluptate illum nihil.
+            </p>
+            <div class="btn-home">
+                <a href="#" class="btn">Contactanos</a>
+            </div>
         </div>
     </header>
-    <section class="content aun no se">
+    <section class="content-aun-no-se">
         <h2 class="title">Servicios</h2>
         <p>
             Lorem, ipsum dolor sit amet consectetur 
@@ -81,7 +83,7 @@
             repudiandae a qui excepturi. Animi, 
             architecto facilis. Accusamus?</p>
     </section>
-    <section class="content contact">
+    <section class="content-contact">
         <h2 class="title">Contacto</h2>
         <p>Numero de telefono</p>
         <p>correo electronico</p>
@@ -90,6 +92,15 @@
             <img src="https://st2.depositphotos.com/4242631/6430/v/450/depositphotos_64302369-stock-illustration-map-icon-with-pin-pointer.jpg" height="220px" width="100%" alt="mapa">
         </figure>
     </section>
+    <div class="footer"></div>
+    <script>
+        window.addEventListener('scroll', function() {
+        var scrollPosition = window.scrollY;
+        var headerContent = document.querySelector('.header-content');
+        headerContent.style.top = 50 - scrollPosition * 0.2 + '%';
+        
+    });
+    </script>   
     
 </body>
 </html>

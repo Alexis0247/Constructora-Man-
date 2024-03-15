@@ -18,7 +18,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
+    height: 70px;
     background: #1e1e1e;
     position: fixed;
     width: 100%;
@@ -48,5 +48,103 @@ body {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 15px;
+}
+.navbar a:hover {
+    background: #196e23;
+}
+.header {
+    height: 115vh !important; /* cambia el tamaño de la seccion principal*/
+    background: url(img/img_fondo.jpg) no-repeat center; /* Agrega una imagen de fondo en la seccion 1, llenando el fondo */
+    background-size: cover;
+    position: sticky; /* Hace que la imagen se quede fija al hacer scroll */
+    top: 0; /* Asegura que la imagen esté fija en la parte superior */
+    z-index: -1; /* Establece un z-index bajo para que esté por debajo del contenido */
+    
+}
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+.header-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    max-width: 70%; /* Establece un ancho máximo para el párrafo */
+    margin: 0 auto; /* Centra el párrafo horizontalmente */
+}
+.header-content .btn{
+    max-width: 100%; /* Establece un ancho máximo para el párrafo */
+    margin: 0 auto; /* Centra el párrafo horizontalmente */
+}
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: white;
+
+}
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    color: white;
+    text-decoration: none;
+    background: #1e1e1e;
+}
+.btn:hover{
+    background: green;
+}
+.btn-home {
+    display: flex;
+}
+.btn-home{
+    margin: 0 10px;
+}
+.content{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-aun-no-se {
+    padding: 30px;
+    background: #1e1e1e;
+    height: 100vb !important;
+}
+.content-about{
+    padding: 30px;
+    background: #949494;
+    height: 100vb !important;
+}
+.content-more{
+    padding: 30px;
+    background: #1e1e1e;
+    height: 100vb !important;
+}
+.content-contact{
+    padding: 30px;
+    background: #949494;
+    height: 100vb !important;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    height: 72px; /* Altura del marco blanco */
+    background-color: white; /* Color del marco */
+    width: 100%; /* Ancho completo de la página */
+    position: fixed; /* Fija la posición en la parte inferior */
+    bottom: 0; /* Alinea el marco al fondo de la página */
+    z-index: 999; /* Asegura que esté por encima de otros elementos */
+    border-top: 1px solid #ccc; /* Agrega un borde superior opcional */
 }
