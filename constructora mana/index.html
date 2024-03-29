@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Constructora-maná</title>
 </head>
 <body>
-    <div class="head" >
+    <div class="head">
         <div class="logo">
             <a href="#">Constructora Maná</a>
         </div>
         <nav class="navbar">
-            <a href="#">Inicio</a>
-            <a href="#">Sobre Nosotros</a>
+            <a href="/constructora mana/index.html">Inicio</a>
+            <a href="/constructora mana/portada.html">Sobre Nosotros</a>
             <a href="#">Nuestro Trabajo</a>
             <a href="#">Servicios</a>
-            <a href="#">Contactos</a>
+            <a href="/constructora mana/Contactanos.html">Contactos</a>
         </nav>
     </div>
     <header class="content header">
@@ -31,11 +33,12 @@
                 accusamus voluptate illum nihil.
             </p>
             <div class="btn-home">
-                <a href="#" class="btn">Contactanos</a>
+                <a href="/constructora mana/Contactanos.html" class="btn">Contactanos</a>
             </div>
         </div>
     </header>
-    <section class="content-aun-no-se">
+    
+    <section class="content content-service">
         <h2 class="title">Servicios</h2>
         <p>
             Lorem, ipsum dolor sit amet consectetur 
@@ -46,65 +49,62 @@
             accusamus voluptate illum nihil.
         </p>
         <div class="box-container">
-            <div class="box">
-                <h3>Consruccion</h3>
-                <p>molestias totam quisquam quis, harum 
+            <div class="box-1">
+                <img src="/constructora mana/img/contruccion.jpg" alt="Construccion">
+                <h3>Construcción</h3>
+                <p>Molestias totam quisquam quis, harum 
                     accusamus voluptate illum nihil.</p>
             </div>
-            <div class="box">
+            <div class="box-2">
+                <img src="/constructora mana/img/electricidad.jpg" alt="Instalaciones">
                 <h3>Instalaciones</h3>
-                <p>molestias totam quisquam quis, harum 
+                <p>Molestias totam quisquam quis, harum 
                     accusamus voluptate illum nihil.</p>
             </div>
-            <div class="box">
+            <div class="box-3">
+                <img src="/constructora mana/img/Pintura.jpg" alt="Pintura">
                 <h3>Pintura</h3>
-                <p>molestias totam quisquam quis, harum 
+                <p>Molestias totam quisquam quis, harum 
                     accusamus voluptate illum nihil.</p>
             </div>
         </div>
     </section>
-    <section class="content-about">
-        <h2 class="title">Sobre Nostros</h2>
+    <section class="content content-about">
+        <h2 class="title">Sobre Nosotros</h2>
         <p>
             Constructora Mana Ltda cuenta con más de 30 años de experiencia en el rubro de la construcción en general.
             Actualmente, nuestro trabajo se centra principalmente en el estudio, desarrollo y construcción de proyectos habitacionales urbanos y/o rurales. 
             Asimismo, desarrollamos y construimos proyectos particulares y/o privados.  
         </p>
-        <a href="#" class="btn">Saber más</a>
-
+        <a href="/constructora mana/portada.html" class="btn">Saber más</a>
     </section>
-    <section class="content-more">
-        <h2 class="title">¿Como trabajamos?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Doloremque tempora 
-            aliquid aperiam repellendus dolor 
-            consequuntur delectus veniam blanditiis 
-            magnam excepturi. Tenetur molestias 
-            repudiandae a qui excepturi. Animi, 
-            architecto facilis. Accusamus?</p>
-        <div class="image-container">
-            <img src="img/img_fondo.jpg" alt="">
-        </div>
+    <section class="content how-we-work">
+        <section class="how-we-work-content">
+            <h2 class="title">¿Cómo trabajamos?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tempora aliquid aperiam 
+                repellendus dolor consequuntur delectus veniam blanditiis magnam excepturi. Tenetur molestias repudiandae a 
+                qui excepturi. Animi, architecto facilis. Accusamus?
+            </p>
+            <section class="image-area">
+                <img src="img/contruccion.jpg" alt="Imagen de ejemplo">
+            </section>
+        </section>
+        <section class="image-area">
+            <img src="" alt="">
+        </section>
     </section>
-    
-    <section class="content-contact">
+    <section class="content content-contact">
         <h2 class="title">Contacto</h2>
-        <p>Numero de telefono</p>
-        <p>correo electronico</p>
-        <p>Whatsapp</p>
+        <p>Número de teléfono</p>
+        <p>9 99 999 990</p>
+        <p>Correo electrónico</p>
+        <p>ejemplo@ejemplo.com</p>
+        <p>WhatsApp</p>
+        <p>+569 99 999 999</p>
         <figure class="mapa"> 
             <img src="https://st2.depositphotos.com/4242631/6430/v/450/depositphotos_64302369-stock-illustration-map-icon-with-pin-pointer.jpg" height="220px" width="100%" alt="mapa">
         </figure>
     </section>
     <div class="footer"></div>
-    <script>
-        window.addEventListener('scroll', function() {
-        var scrollPosition = window.scrollY;
-        var headerContent = document.querySelector('.header-content');
-        headerContent.style.top = 50 - scrollPosition * 0.2 + '%';
-        
-    });
-    </script>   
-    
 </body>
 </html>
