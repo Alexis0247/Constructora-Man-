@@ -19,10 +19,11 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 70px;
-    background: #1e1e1e;
+    background: #131512;
     position: fixed;
     width: 100%;
     z-index: 100;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50); /* Agrega una sombra */
 }
 .navbar {
     display: flex;
@@ -32,7 +33,7 @@ body {
 }
 .logo{
     margin-left: 30px;
-    background-color: rgb(0, 91, 0);
+    background-color: #248B24    ;
     padding: 40px;
     
 }
@@ -53,16 +54,18 @@ body {
     transition: color 0.4s;
 }
 .navbar a:hover {
-    color: green;
+    color: #248B24;
 }
 .header {
-    height: 115vh !important; /* cambia el tamaño de la seccion principal*/
-    background: url(img/img_fondo.jpg) no-repeat center; /* Agrega una imagen de fondo en la seccion 1, llenando el fondo */
-    background-size: cover;
-    position: sticky; /* Hace que la imagen se quede fija al hacer scroll */
-    top: 0; /* Asegura que la imagen esté fija en la parte superior */
-    z-index: -1; /* Establece un z-index bajo para que esté por debajo del contenido */
-    
+    height: 150vh !important; /* Modifica el tamaño de la imagen del encabezado */
+    background: url(img/img_fondo.jpg) no-repeat center; /* Agrega la imagen del encabezado */
+    background-size: cover; /* Hace que la imagen del encabezado se agrande a medida de la pantalla*/
+    background-attachment: fixed; /* Fija la imagen de fondo */
+}
+
+.btn-home {
+    display: flex;
+    z-index: 1001; /* Asegura que el botón esté por encima del encabezado */
 }
 .title {
     margin-bottom: 40px;
@@ -72,14 +75,12 @@ body {
     color: white;
 }
 .header-content {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-60%);
-    color: white;
-    text-align: center;
-    z-index: 1;
-    max-width: 70%; /* Establece un ancho máximo para el párrafo */
-    margin: 0 auto; /* Centra el párrafo horizontalmente */
+    position: absolute; /* Cambia la posición a absoluta */
+    top: 50%; /* Coloca el contenido en el centro verticalmente */
+    left: 50%; /* Coloca el contenido en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el contenido */
+    text-align: center; /* Alinea el texto al centro */
+    color: white; /* Color del texto */
 }
 .header-content .btn{
     max-width: 100%; /* Establece un ancho máximo para el párrafo */
@@ -98,10 +99,11 @@ p {
     padding: 10px 40px;
     color: white;
     text-decoration: none;
-    background: #1e1e1e;
+    background: #131512;
 }
 .btn:hover{
-    background: green;
+    background: #248B24;
+    transition: background-color 0.2s;
 }
 .btn-home {
     display: flex;
@@ -115,75 +117,111 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
-.content-aun-no-se {
+.content-service {
     padding: 130px;
-    background: #1e1e1e;
+    background: #131512;
     height: 120vb !important;
 }
 .content-about{
     padding: 120px;
-    background: #949494;
+    background: #DED6D1;
     height: 70vb !important;
 }
-.content-more {
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    text-align: left;
-
+.content-about .title{
+    color: #090C08;
+}
+.content-about p{
+    color: #090C08;
 }
 
-.image-container img{
-    max-width: 40%;
-}
 
-.content-more p{
-    width: 50%;
-    padding-left: 50px;
-}
 
-.content-more{
-    padding: 100px;
-    background: #1e1e1e;
+.how-we-work{
+    padding: 0%;
+    margin: 0%;
+    background: #131512;
     height: 100vb !important;
+    align-items: center;
+    align-content: center;
     
 }
+.content-how-we-work {
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+.how-we-work-content {
+    padding: 50px;
+    margin: 0%;
+    width: 70%; /* Ancho del contenido */
+    padding-right: 50px; /* Espaciado entre el contenido y la imagen */
+    text-align: left;
+}
+
+.how-we-work .image-area {
+    width: 70%;
+    height: 300%;
+    display: flex;
+    justify-content: flex-end;
+    max-height: 100vh;
+}
+
+.image-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 .content-contact{
     padding: 100px;
-    background: #949494;
+    background: #DED6D1;
     height: 100vb !important;
 }
-* {
+.content-contact p{
+    margin-bottom: 2px;
+    color: #090C08;
+}
+.content-contact .title{
+    color: #090C08;
+}
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.footer {
-    height: 72px; /* Altura del marco blanco */
-    background-color: white; /* Color del marco */
-    width: 100%; /* Ancho completo de la página */
-    position: fixed; /* Fija la posición en la parte inferior */
-    bottom: 0; /* Alinea el marco al fondo de la página */
-    z-index: 999; /* Asegura que esté por encima de otros elementos */
-    border-top: 1px solid #ccc; /* Agrega un borde superior opcional */
-}
 .box-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
 }
-.box-container .box{
-    height: 11rem;
-    width: 17rem;
-    background: #949494;
+.box-container .box-1, .box-2, .box-3{
+    height: 23rem;
+    width: 22rem;
+    background: #DED6D1;
     border-radius: 1rem;
     box-shadow: 0.3rem 5rem rgb(0, 0, 0 .5);
     margin: 2rem;
 }
 
+.box-1 img, .box-2 img, .box-3 img {
+    width: 100%; /* Ajusta el tamaño de la imagen según tu preferencia */
+    height: auto; /* Para mantener la proporción de la imagen */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    border-top-left-radius: 15px; /* Redondear esquina superior izquierda */
+    border-top-right-radius: 15px; /* Redondear esquina superior derecha */
+}
+h3{
+    font-size: 20px;
+}
+
+.box-1 p, .box-2 p, .box-3 p{
+    color: #090C08;
+}
 @media (max-width: 768px){
     .title{
         margin-bottom: 0;
@@ -197,4 +235,16 @@ p {
     .navbar{
         display: none;
     }
+}
+
+
+                                                         
+
+.header-about .header-content-about h2{
+    position: absolute; /* Cambia la posición a absoluta */
+    top: 50%; /* Coloca el contenido en el centro verticalmente */
+    left: 50%; /* Coloca el contenido en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el contenido */
+    text-align: center; /* Alinea el texto al centro */
+    color: rgb(0, 0, 0); /* Color del texto */
 }
