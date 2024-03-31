@@ -8,7 +8,12 @@
 body {
     text-align: center;
     font-family: sans-serif;
+    background-color: #DED6D1;
 }
+h3{
+    font-size: 20px;
+}
+
 .header {
     display: flex;
     justify-content: center;
@@ -193,6 +198,8 @@ p {
     box-sizing: border-box;
 }
 
+
+
 .box-container{
     display: flex;
     justify-content: center;
@@ -208,15 +215,14 @@ p {
     margin: 2rem;
 }
 
-.box-1 img, .box-2 img, .box-3 img {
-    width: 100%; /* Ajusta el tamaño de la imagen según tu preferencia */
-    height: auto; /* Para mantener la proporción de la imagen */
-    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+.box-container .box-1 img,
+.box-container .box-2 img,
+.box-container .box-3 img {
+    max-width: 100%; /* Establece un ancho máximo para la imagen */
+    max-height: 100%; /* Establece una altura máxima para la imagen */
     border-top-left-radius: 15px; /* Redondear esquina superior izquierda */
     border-top-right-radius: 15px; /* Redondear esquina superior derecha */
-}
-h3{
-    font-size: 20px;
+    object-fit: cover; /* Ajusta la imagen para que ocupe todo el espacio disponible */
 }
 
 .box-1 p, .box-2 p, .box-3 p{
@@ -241,10 +247,34 @@ h3{
                                                          
 
 .header-about .header-content-about h2{
-    position: absolute; /* Cambia la posición a absoluta */
-    top: 50%; /* Coloca el contenido en el centro verticalmente */
-    left: 50%; /* Coloca el contenido en el centro horizontalmente */
-    transform: translate(-50%, -50%); /* Centra el contenido */
-    text-align: center; /* Alinea el texto al centro */
-    color: rgb(0, 0, 0); /* Color del texto */
+position: absolute;
+color: #090C08;
+align-items: center;
+text-align: center;
+width: 40%;
+top: 30%;
+transform: translate(-50%, -50%); /* Centra el contenido */
+}
+.content-about-more p{
+    color: #DED6D1;
+    text-align: justify;
+}
+.content-about-more{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+    background: #131512;
+    height: 100vb !important;
+}
+.cita {
+    position: relative;
+    display: inline-block;
+}
+
+.cita p {
+    border-left-width: 4px;
+    border-left-style: solid;
+    text-align: left;
+    padding-left: 6%;
+    font-size: 30px;
 }
