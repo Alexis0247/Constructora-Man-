@@ -1,16 +1,18 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     border: 0%;
     font-size: 100%;
     vertical-align: baseline;
 }
+
 body {
     text-align: center;
     font-family: sans-serif;
     background-color: #DED6D1;
 }
-h3{
+
+h3 {
     font-size: 20px;
 }
 
@@ -19,36 +21,38 @@ h3{
     justify-content: center;
     align-items: center;
 }
+
 .head {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
+    height: 100px;
     background: #131512;
     position: fixed;
     width: 100%;
     z-index: 100;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50); /* Agrega una sombra */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
+    /* Agrega una sombra */
 }
+
 .navbar {
     display: flex;
     margin-right: 10px;
-    margin-top: 25px;
+    margin-top: 7px;
 
 }
-.logo{
+
+.logo {
     margin-left: 30px;
-    background-color: #248B24    ;
     padding: 40px;
-    
-}
-.logo a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: 20px;
+    width: 10%;
 
 }
+.logo img{
+    width: 150px;
+    height: auto;
+}
+
 .navbar a {
     display: block;
     padding: 23px 20px;
@@ -58,20 +62,250 @@ h3{
     font-size: 15px;
     transition: color 0.4s;
 }
+
 .navbar a:hover {
     color: #248B24;
 }
+
+.dropbtn {
+    background-color: #131512;
+    color: white;
+    padding: 13px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-right: 45px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: auto;
+    right: 0;
+    /* Ajusta el menú para que se abra hacia la derecha */
+    opacity: 0;
+    max-height: none; /* Cambiado a 'none' */
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.dropdown-content a,
+.dropdown-content a:hover,
+.dropdown-content a:visited,
+.dropdown-content a:focus {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a:focus {
+    background-color: #248B24;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #248B24;
+}
+
+
+
+.call-us {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    margin-right: 100PX;
+}
+
+.call-text {
+    margin-right: 10px;
+    /* Espacio entre el texto y el número */
+    color: #DED6D1;
+    padding-right: 10px;
+    /* Espacio adicional a la derecha del texto */
+    border-right: 3px solid #DED6D1;
+    /* Borde derecho */
+    font-size: 25px;
+}
+
+.phone-number {
+    font-size: 25px;
+    color: #DED6D1;
+}
+
+
+
+
+/* contactenos */
+
+.schedule_box_container2 {
+    display: inline-block;
+    position: absolute;
+    top: 55%;
+    right: 10%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 20px;
+    width: 30%; /* Ajusta el ancho según tus necesidades */
+}
+
+.schedule_box_container1 {
+    position: absolute;
+    font-size: 50px;
+    color: #DED6D1;
+    top: 50%;
+    left: 5%;
+    /* Ajusta el espacio desde el lado izquierdo */
+    transform: translateY(-50%);
+    padding: 20px;
+    width: 40%;
+    content: left;
+}
+
+/* Ajusta la altura y los estilos de la sección "how-we-work" */
+.how-we-work {
+    height: auto;
+    /* Ajusta la altura automáticamente */
+    background: none;
+    /* Elimina el color de fondo */
+}
+
+.how-we-work-content {
+    width: 100%;
+    /* Utiliza el ancho completo */
+    padding: 0;
+    /* Elimina el relleno */
+}
+
+
+
+
+/*Estilo de el formulario de contactanos*/
+.input-container {
+    position: relative;
+    margin: 30px auto;
+    width: 300px;
+}
+
+.input-container input[type="text"] {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #242020;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+}
+
+.input-container .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #23272482;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.input-container input[type="text"]:focus~.label,
+.input-container input[type="text"]:valid~.label {
+    top: -20px;
+    font-size: 16px;
+    color: #04ff00;
+}
+
+.input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #04ff00;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+
+.input-container input[type="text"]:focus~.underline,
+.input-container input[type="text"]:valid~.underline {
+    transform: scaleX(1);
+}
+.input-container {
+    position: relative;
+    margin: 30px auto;
+    width: 300px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.input-container textarea {
+    width: 100%;
+    height: 100px; /* Tamaño específico que desees */
+    resize: none; /* Evita que el usuario redimensione el textarea */
+    padding: 5px;
+    border: 2px solid #242020; /* Borde para resaltar el textarea */
+    border-radius: 5px; /* Opcional: bordes redondeados */
+    box-sizing: border-box; /* Incluye el padding y borde en el tamaño total */
+}
+.input-container textarea:focus {
+    border-color: #04ff00; /* Cambia el color del borde cuando el textarea está seleccionado */
+    outline: none; /* Elimina el contorno predeterminado que algunos navegadores agregan */
+}
+#text-area::placeholder {
+    font-family: Arial, Helvetica, sans-serif; /* Cambia la fuente según tu preferencia */
+}
+
+.date-input {
+    width: 300px; /* Ajusta el ancho */
+    height: 40px; /* Ajusta la altura */
+}
+.date-input::-webkit-datetime-edit {
+    font-size: 16px; /* Tamaño del texto */
+    color: #090C08;
+}
+
+
+
+
+
+
+
+
+
 .header {
-    height: 150vh !important; /* Modifica el tamaño de la imagen del encabezado */
-    background: url(img/img_fondo.jpg) no-repeat center; /* Agrega la imagen del encabezado */
-    background-size: cover; /* Hace que la imagen del encabezado se agrande a medida de la pantalla*/
-    background-attachment: fixed; /* Fija la imagen de fondo */
+    height: 150vh !important;
+    /* Modifica el tamaño de la imagen del encabezado */
+    background: url(img/img_fondo.jpg) no-repeat center;
+    /* Agrega la imagen del encabezado */
+    background-size: cover;
+    /* Hace que la imagen del encabezado se agrande a medida de la pantalla*/
+    background-attachment: fixed;
+    /* Fija la imagen de fondo */
 }
 
 .btn-home {
     display: flex;
-    z-index: 1001; /* Asegura que el botón esté por encima del encabezado */
+    z-index: 1001;
+    /* Asegura que el botón esté por encima del encabezado */
 }
+
 .title {
     margin-bottom: 40px;
     font-size: 60px;
@@ -79,18 +313,29 @@ h3{
     text-transform: uppercase;
     color: white;
 }
+
 .header-content {
-    position: absolute; /* Cambia la posición a absoluta */
-    top: 50%; /* Coloca el contenido en el centro verticalmente */
-    left: 50%; /* Coloca el contenido en el centro horizontalmente */
-    transform: translate(-50%, -50%); /* Centra el contenido */
-    text-align: center; /* Alinea el texto al centro */
-    color: white; /* Color del texto */
+    position: absolute;
+    /* Cambia la posición a absoluta */
+    top: 50%;
+    /* Coloca el contenido en el centro verticalmente */
+    left: 50%;
+    /* Coloca el contenido en el centro horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Centra el contenido */
+    text-align: center;
+    /* Alinea el texto al centro */
+    color: white;
+    /* Color del texto */
 }
-.header-content .btn{
-    max-width: 100%; /* Establece un ancho máximo para el párrafo */
-    margin: 0 auto; /* Centra el párrafo horizontalmente */
+
+.header-content .btn {
+    max-width: 100%;
+    /* Establece un ancho máximo para el párrafo */
+    margin: 0 auto;
+    /* Centra el párrafo horizontalmente */
 }
+
 p {
     margin-bottom: 40px;
     font-size: 18px;
@@ -98,6 +343,7 @@ p {
     line-height: 2;
 
 }
+
 .btn {
     display: inline-block;
     margin-top: 15px;
@@ -106,62 +352,76 @@ p {
     text-decoration: none;
     background: #131512;
 }
-.btn:hover{
+
+.btn:hover {
     background: #248B24;
     transition: background-color 0.2s;
 }
+
 .btn-home {
     display: flex;
 }
-.btn-home{
+
+.btn-home {
     margin: 0 10px;
 }
-.content{
+
+.content {
     height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
+
 .content-service {
     padding: 130px;
     background: #131512;
     height: 120vb !important;
 }
-.content-about{
+
+.content-about {
     padding: 120px;
     background: #DED6D1;
     height: 70vb !important;
 }
-.content-about .title{
+
+.content-about .title {
     color: #090C08;
 }
-.content-about p{
+
+.content-about p {
     color: #090C08;
 }
 
 
 
-.how-we-work{
+
+
+.how-we-work {
     padding: 0%;
     margin: 0%;
     background: #131512;
     height: 100vb !important;
     align-items: center;
     align-content: center;
-    
+
 }
+
 .content-how-we-work {
     display: flex;
-    align-items: center; /* Centra el contenido verticalmente */
+    align-items: center;
+    /* Centra el contenido verticalmente */
 }
 
 .how-we-work-content {
     padding: 50px;
     margin: 0%;
-    width: 70%; /* Ancho del contenido */
-    padding-right: 50px; /* Espaciado entre el contenido y la imagen */
+    width: 70%;
+    /* Ancho del contenido */
+    padding-right: 50px;
+    /* Espaciado entre el contenido y la imagen */
     text-align: left;
 }
 
@@ -180,19 +440,78 @@ p {
 }
 
 
-.content-contact{
+
+/*Servicios*/
+
+.service {
+    padding: 0%;
+    margin: 0%;
+    background: #131512;
+    height: 100vb !important;
+    align-items: center;
+    align-content: center;
+}
+
+.content-service {
+    display: flex;
+    align-items: center;
+    /* Centra el contenido verticalmente */
+}
+
+.service-content {
+    padding: 50px;
+    margin: 0%;
+    width: 70%;
+    /* Ancho del contenido */
+    padding-left: 50px; /* Cambiado a padding-left */
+    /* Espaciado entre el contenido y la imagen */
+    text-align: left;
+}
+
+.service .image-area {
+    width: 70%;
+    height: 300%;
+    display: flex;
+    justify-content: flex-start; /* Cambiado a flex-start */
+    max-height: 100vh;
+}
+
+.image-area img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image-area-service img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+.content-contact {
     padding: 100px;
     background: #DED6D1;
     height: 100vb !important;
 }
-.content-contact p{
+
+.content-contact p {
     margin-bottom: 2px;
     color: #090C08;
 }
-.content-contact .title{
+
+.content-contact .title {
     color: #090C08;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -200,13 +519,16 @@ p {
 
 
 
-.box-container{
+.box-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
 }
-.box-container .box-1, .box-2, .box-3{
+
+.box-container .box-1,
+.box-2,
+.box-3 {
     height: 23rem;
     width: 22rem;
     background: #DED6D1;
@@ -218,54 +540,66 @@ p {
 .box-container .box-1 img,
 .box-container .box-2 img,
 .box-container .box-3 img {
-    max-width: 100%; /* Establece un ancho máximo para la imagen */
-    max-height: 100%; /* Establece una altura máxima para la imagen */
-    border-top-left-radius: 15px; /* Redondear esquina superior izquierda */
-    border-top-right-radius: 15px; /* Redondear esquina superior derecha */
-    object-fit: cover; /* Ajusta la imagen para que ocupe todo el espacio disponible */
+    max-width: 100%;
+    /* Establece un ancho máximo para la imagen */
+    max-height: 100%;
+    /* Establece una altura máxima para la imagen */
+    border-top-left-radius: 15px;
+    /* Redondear esquina superior izquierda */
+    border-top-right-radius: 15px;
+    /* Redondear esquina superior derecha */
+    object-fit: cover;
+    /* Ajusta la imagen para que ocupe todo el espacio disponible */
 }
 
-.box-1 p, .box-2 p, .box-3 p{
+.box-1 p,
+.box-2 p,
+.box-3 p {
     color: #090C08;
 }
-@media (max-width: 768px){
-    .title{
+
+@media (max-width: 768px) {
+    .title {
         margin-bottom: 0;
         font-size: 40px;
     }
 
-    .sau{
+    .sau {
         height: 120vh;
     }
 
-    .navbar{
+    .navbar {
         display: none;
     }
 }
 
 
-                                                         
 
-.header-about .header-content-about h2{
-position: absolute;
-color: #090C08;
-align-items: center;
-text-align: center;
-width: 40%;
-top: 30%;
-transform: translate(-50%, -50%); /* Centra el contenido */
+
+.header-about .header-content-about h2 {
+    position: absolute;
+    color: #090C08;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    /* Centra el contenido */
 }
-.content-about-more p{
+
+.content-about-more p {
     color: #DED6D1;
     text-align: justify;
 }
-.content-about-more{
+
+.content-about-more {
     padding-left: 200px;
     padding-right: 200px;
     padding-top: 100px;
     background: #131512;
     height: 100vb !important;
 }
+
 .cita {
     position: relative;
     display: inline-block;
