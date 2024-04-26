@@ -6,6 +6,9 @@
     vertical-align: baseline;
 }
 
+
+
+
 body {
     text-align: center;
     font-family: sans-serif;
@@ -668,3 +671,34 @@ p {
     padding-left: 6%;
     font-size: 30px;
 }
+/***************************************************************************/
+/*WHATSAPP BOTON*/
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes slideIn {
+    from { right: -100px; } /* Empieza fuera de la pantalla */
+    to { right: 70px; } /* Termina en la posición deseada */
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 50px;
+    right: 70px;
+    transition: transform 0.5s ease-in-out;
+    animation: slideIn 1s forwards; /* Animación de entrada */
+}
+
+.whatsapp-btn img {
+    width: 60px;
+    height: auto;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.2); /* Cambia el tamaño al pasar el mouse sobre él */
+}
+/*WHATSAPP BOTON*/
+/***************************************************************************/
