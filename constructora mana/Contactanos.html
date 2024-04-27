@@ -36,38 +36,43 @@
             <h1>Contáctanos</h1>
             <p>Reconocemos tu elección al decidir contactar a nuestra empresa.</p>
         </div>
-        <form action="#" method="POST">
+        <form 
+        action="https://script.google.com/macros/s/AKfycby74GVUlDqLRe3YPMAq2gQ4mOAPtC2jogh6LPLOafsYnBWImvgCET6m5jPEOQWlJF_ZhQ/exec"
+        method="POST"
+      >
         <div class="schedule_box_container2">
-            <div class="input-container">
-                <input type="text" id="input" required="">
-                <label for="input" class="label">Nombre</label>
-                <div class="underline"></div>
-            </div>
-            <div class="input-container">
-                <input type="text" id="input" required="">
-                <label for="input" class="label">Correo</label>
-                <div class="underline"></div>
-            </div>
-            <div class="input-container">
-                <input type="text" id="input" required="">
-                <label for="input" class="label">Numero de telefono</label>
-                <div class="underline"></div>
-            </div>
-            <div class="input-container">
-                <input type="text" id="input" required="">
-                <label for="input" class="label">Servicio Requerido</label>
-                <div class="underline"></div>
-            </div>
-            <div class="input-container">
-                <label for="input">Descripcion del Requerimiento</label>
-                <textarea id="text-area-4" placeholder="Descripcion"></textarea>
-            </div>
-            <div class="input-container">
-                <label for="input" class="label"></label>
-                <input type="date" id="input" class="date-input">
-            </div>
+          <div class="input-container">
+            <input type="text" name="Nombre" required>
+            <label class="label">Nombre</label>
+            <div class="underline"></div>
+          </div>
+          <div class="input-container">
+            <input type="text" name="Correo" required>
+            <label class="label">Correo</label>
+            <div class="underline"></div>
+          </div>
+          <div class="input-container">
+            <input type="text" name="Telefono" required>
+            <label class="label">Numero de telefono</label>
+            <div class="underline"></div>
+          </div>
+          <div class="input-container">
+            <input type="text" name="Servicio" required>
+            <label class="label">Servicio Requerido</label>
+            <div class="underline"></div>
+          </div>
+          <div class="input-container">
+            <textarea name="Descripcion" placeholder="Descripcion"></textarea>
+          </div>
+          <div class="input-container">
+            <input type="date" name="Fecha">
+          </div>
+          <button type="submit">Enviar</button>
         </div>
-    </form>
+        
+      </form>
+            
+      
     </section>
     <section class="content content-contact">
 
@@ -92,5 +97,33 @@
 
     <div class="footer"></div>
 </body>
+<script>// Espera a que el DOM esté completamente cargado
+    document.addEventListener("DOMContentLoaded", function() {
+      // Agrega un event listener al formulario para detectar su envío
+      document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita el envío predeterminado del formulario
+    
+        // Realiza una solicitud fetch al script de Google Apps Script
+        fetch("https://script.google.com/macros/s/AKfycby74GVUlDqLRe3YPMAq2gQ4mOAPtC2jogh6LPLOafsYnBWImvgCET6m5jPEOQWlJF_ZhQ/exec", {
+          method: "POST",
+          body: new FormData(this) // Envía los datos del formulario
+        })
+        .then(response => {
+          if (response.ok) {
+            // Muestra un alert de éxito
+            alert("¡El correo se ha enviado correctamente!");
+          } else {
+            // Muestra un alert de error
+            alert("Ha ocurrido un error al enviar el correo.");
+          }
+        })
+        .catch(error => {
+          console.error("Error:", error);
+          // Muestra un alert de error
+          alert("Ha ocurrido un error al enviar el correo.");
+        });
+      });
+    });
+    </script>
 
 </html>
