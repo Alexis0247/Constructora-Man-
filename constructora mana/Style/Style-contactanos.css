@@ -1,0 +1,374 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/**************************************************************/
+/*NAVBAR*/
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #DED6D1;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background: #090C08;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
+    /* Agrega una sombra */
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+    margin-top: 7px;
+
+}
+
+.logo {
+    margin-left: 30px;
+    padding: 40px;
+    width: 10%;
+
+}
+.logo img{
+    width: 150px;
+    height: auto;
+}
+
+.navbar a {
+    display: block;
+    padding: 23px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: color 0.4s;
+}
+
+.navbar a:hover {
+    color: #0ac604;
+}
+
+.dropbtn {
+    background-color: #090C08;
+    color: white;
+    padding: 13px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-right: 45px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: auto;
+    right: 0;
+    /* Ajusta el menú para que se abra hacia la derecha */
+    opacity: 0;
+    max-height: none; /* Cambiado a 'none' */
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.dropdown-content a,
+.dropdown-content a:hover,
+.dropdown-content a:visited,
+.dropdown-content a:focus {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a:focus {
+    background-color: #0ac604;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #0ac604;
+}
+
+
+
+.call-us {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    margin-right: 100PX;
+}
+
+.call-text {
+    margin-right: 10px;
+    /* Espacio entre el texto y el número */
+    color: #DED6D1;
+    padding-right: 10px;
+    /* Espacio adicional a la derecha del texto */
+    border-right: 3px solid #DED6D1;
+    /* Borde derecho */
+    font-size: 25px;
+}
+
+.phone-number {
+    font-size: 25px;
+    color: #DED6D1;
+}
+/*FIN DE NAVBAR*/
+/**************************************************************************/
+/***********************************************************/
+/*FORMULARIO*/
+
+.schedule_box_container2 {
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 20px;
+    width: 30%; /* Ajusta el ancho según tus necesidades */
+    height: 79%;
+}
+
+
+
+
+
+/*Estilo de el formulario de contactanos*/
+.input-container {
+    position: relative;
+    margin: 30px auto;
+    width: 300px;
+}
+
+.input-container input[type="text"] {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #242020;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+}
+
+.input-container .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #23272482;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.input-container input[type="text"]:focus~.label,
+.input-container input[type="text"]:valid~.label {
+    top: -20px;
+    font-size: 16px;
+    color: #0ac604;
+}
+
+.input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #0ac604;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+
+.input-container input[type="text"]:focus~.underline,
+.input-container input[type="text"]:valid~.underline {
+    transform: scaleX(1);
+}
+.input-container {
+    position: relative;
+    margin: 30px auto;
+    width: 300px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.input-container textarea {
+    width: 100%;
+    height: 100px; /* Tamaño específico que desees */
+    resize: none; /* Evita que el usuario redimensione el textarea */
+    padding: 5px;
+    border: 2px solid #242020; /* Borde para resaltar el textarea */
+    border-radius: 5px; /* Opcional: bordes redondeados */
+    box-sizing: border-box; /* Incluye el padding y borde en el tamaño total */
+}
+.input-container textarea:focus {
+    border-color: #0ac604; /* Cambia el color del borde cuando el textarea está seleccionado */
+    outline: none; /* Elimina el contorno predeterminado que algunos navegadores agregan */
+}
+#text-area::placeholder {
+    font-family: Arial, Helvetica, sans-serif; /* Cambia la fuente según tu preferencia */
+}
+
+.date-input {
+    width: 300px; /* Ajusta el ancho */
+    height: 40px; /* Ajusta la altura */
+}
+.date-input::-webkit-datetime-edit {
+    font-size: 16px; /* Tamaño del texto */
+    color: #090C08;
+}
+
+
+/*FIN FORMULARIO*/
+/***********************************************************/
+
+/*************************************************************/
+/*CONTENIDO ACOMPAÑANTE DE FORMULARIO*/
+
+.schedule_box_container1 {
+    position: absolute;
+    font-size: 70px;
+    color: #DED6D1;
+    top: 50%;
+    left: 5%;
+    /* Ajusta el espacio desde el lado izquierdo */
+    transform: translateY(-50%);
+    padding: 20px;
+    width: 40%;
+    content: left;
+}
+
+.content-about p {
+    color: #DED6D1;
+    text-align: justify;
+}
+
+.content-contacto {
+    padding: 120px;
+    background: #090C08;
+    height: 70vb !important;
+}
+
+.content-about .title {
+    color: #090C08;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: white;
+    line-height: 2;
+
+}
+
+
+/*FIN CONTENIDO DE ACOMPAÑANTE DE FORMULARIO*/
+/*************************************************************/
+
+/**********************************************************************/
+/* contactenos */
+
+
+.content-contact {
+    padding: 100px;
+    background: #DED6D1;
+    height: 75vb !important;
+}
+
+.content-contact p {
+    margin-bottom: 2px;
+    color: #090C08;
+}
+
+.content-contact .title{
+    color: #090C08;
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+
+
+/*FIN DE CONTACTOS*/
+/*******************************************************************/
+
+/***************************************************************************/
+/*WHATSAPP BOTON*/
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes slideIn {
+    from { right: -100px; } /* Empieza fuera de la pantalla */
+    to { right: 70px; } /* Termina en la posición deseada */
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 50px;
+    right: 70px;
+    transition: transform 0.5s ease-in-out;
+    animation: slideIn 1s forwards; /* Animación de entrada */
+}
+
+.whatsapp-btn img {
+    width: 60px;
+    height: auto;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.2); /* Cambia el tamaño al pasar el mouse sobre él */
+}
+/*WHATSAPP BOTON*/
+/***************************************************************************/
