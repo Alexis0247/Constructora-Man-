@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="/constructora mana/Style/Style-S-Description.css">
+    <link rel="stylesheet" href="/constructora mana/Script/Scrip.js">
+    <link rel="stylesheet" href="/constructora mana/Style/normalize.css">
+</head>
+
+<body>
+    <div class="head">
+        <div class="logo">
+            <a href="index.html">
+                <img src="/constructora mana/img/Copia de Mana constructora.png" alt="Logo de Constructora Mana">
+            </a>
+        </div>
+        <nav class="navbar">
+            <div class="call-us">
+                <span class="call-text">Llámenos o <br> escribanos:</span>
+                <span class="phone-number">+123456789</span>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="/constructora mana/index.html">Inicio</a>
+                    <a href="/constructora mana/Sobre-Nosotros.html">Sobre Nosotros</a>
+                    <a href="/constructora mana/Nuestro-Trabajo.html">Nuestro Trabajo</a>
+                    <div class="submenu">
+                        <a href="/constructora mana/Servicios.html">Servicios</a>
+                        <div class="submenu-content">
+                            <a href="/constructora mana/Servicios/Serv-Construccion.html">Servicio deConstruccion</a>
+                            <a href="/constructora mana/Servicios/Proyectos_R_U_R-.html">proyectos Resindeciales Urbanos
+                                y Rurales</a>
+                            <a href="/constructora mana/Servicios/Asesoramiento.html">Asesoramiento en Mejoramiento de
+                                Terrenos</a>
+                            <a href="/constructora mana/Servicios/Remodelaciones.html">Remodelaciones y Ampliaciones</a>
+                            <a href="/constructora mana/Servicios/Proyecyos-PYR.html">Proyectos Particulares y
+                                Privados</a>
+                        </div>
+                    </div>
+                    <a href="Contactanos.html">Contactos</a>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+    <div class="service-menu-container">
+        <div class="service-menu">
+            <ul>
+                <li><a href="/constructora mana/Servicios/Serv-Construccion.html" style="color: green;">Construccion</a>
+                </li>
+                <li><a href="/constructora mana/Servicios/Proyectos_R_U_R-.html">Proyectos Resindeciales</a></li>
+                <li><a href="/constructora mana/Servicios/Asesoramiento.html">Asesoramiento</a></li>
+                <li><a href="/constructora mana/Servicios/Remodelaciones.html">Remodelaciones</a></li>
+                <li><a href="/constructora mana/Servicios/Proyecyos-PYR.html">Proyectos Particulares</a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="content how-we-work">
+        <div class="content-how-we-work">
+            <section class="how-we-work-content">
+                <h2 class="title">Construccion</h2>
+                <p>
+                    Transformamos tus espacios exteriores en áreas de ensueño y funcionalidad con nuestra experta
+                    construcción de terrazas, techos y estructuras a medida. Desde terrazas expansivas hasta techos
+                    elegantes, nuestro equipo se especializa en crear entornos al aire libre que se adaptan
+                    perfectamente a tu estilo de vida. Además, ofrecemos servicios de restauración y elaboración de
+                    elementos personalizados, garantizando resultados de alta calidad que superan tus expectativas. Con
+                    más de 30 años de experiencia y un enfoque en la atención al cliente, estamos aquí para hacer
+                    realidad tus proyectos con un compromiso con la sostenibilidad y el diseño excepcional.
+                </p>
+            </section>
+        </div>
+    </section>
+    <section>
+        <div class="gallery">
+            <div class="image-container">
+                <div class="video-wrapper">
+                    <video src="/constructora mana/img/B8418045938704786B611AF4A939E296_video_dashinit.mp4"
+                        alt="Video 1"></video>
+                    <div class="overlay" onclick="showModal()">
+                        <span class="overlay-text">Ver</span>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="/constructora mana/img/electricidad.jpg" alt="Imagen 2">
+                <div class="overlay" onclick="showModal()">
+                    <span class="overlay-text">Ver</span>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="/constructora mana/img/img_fondo.jpg" alt="Imagen 3">
+                <div class="overlay" onclick="showModal()">
+                    <span class="overlay-text">Ver</span>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="/constructora mana/img/Pintura.jpg" alt="Imagen 4">
+                <div class="overlay" onclick="showModal()">
+                    <span class="overlay-text">Ver</span>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="/constructora mana/img/images.jpg" alt="Imagen 5">
+                <div class="overlay" onclick="showModal()">
+                    <span class="overlay-text">Ver</span>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="/constructora mana/img/Pintura.jpg" alt="Imagen 6">
+                <div class="overlay" onclick="showModal()">
+                    <span class="overlay-text">Ver</span>
+                </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div id="modalContent"></div>
+            <span class="close">&times;</span>
+            <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+            <button class="next" onclick="changeImage(1)">&#10095;</button>
+        </div>
+    </section>
+    <section class="content content-contact">
+        <h2 class="title">Contacto</h2>
+        <figure class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15031.245030710557!2d-72.93109156097938!3d-41.472314150413766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96183a5a246be41d%3A0xbc62a63c078d10c5!2sJumbo!5e0!3m2!1ses-419!2scl!4v1714075664624!5m2!1ses-419!2scl"
+                width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </figure>
+        <p>Correo electrónico</p>
+        <p>ejemplo@ejemplo.com</p>
+    </section>
+    <a href="https://web.whatsapp.com/" class="whatsapp-btn" target="_blank">
+        <img src="/constructora mana/img/whatsapp.png" alt="WhatsApp Icon">
+    </a>
+
+    <div class="footer"></div>
+    <script>
+        // JavaScript necesario para el funcionamiento de la galería y el modal
+        function redirectToPage(url) {
+            // Redirecciona al usuario a la página especificada por el parámetro 'url'
+            window.location.href = url;
+        }
+
+        // Mostrar el modal al hacer clic en la imagen o el video
+        function showModal(src, isVideo) {
+            var modal = document.getElementById("myModal");
+            var modalContent = document.getElementById("modalContent");
+            modal.style.display = "block";
+            if (isVideo) {
+                modalContent.innerHTML = '<video controls><source src="' + src + '" type="video/mp4"></video>';
+            } else {
+                modalContent.innerHTML = '<img src="' + src + '" class="modal-content">';
+            }
+        }
+
+        // Evento de clic para mostrar el modal al hacer clic en un contenedor de imagen o video
+        document.querySelectorAll('.image-container').forEach(function (container) {
+            container.addEventListener('click', function (event) {
+                var img = this.querySelector('img');
+                var video = this.querySelector('video');
+                if (img) {
+                    showModal(img.src, false);
+                } else if (video) {
+                    showModal(video.src, true);
+                }
+                event.stopPropagation(); // Evitar que el clic se propague al contenedor padre
+            });
+        });
+
+        // Cerrar el modal al hacer clic en la "x"
+        var closeBtn = document.getElementsByClassName("close")[0];
+        closeBtn.onclick = function () {
+            closeModal();
+        }
+
+        // Cerrar el modal al presionar la tecla "Esc"
+        document.addEventListener('keydown', function (event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        };
+
+        // Navegación entre imágenes
+        var currentImageIndex = 0;
+        var images = document.querySelectorAll(".image-container img");
+        function changeImage(step) {
+            currentImageIndex += step;
+            if (currentImageIndex >= images.length) {
+                currentImageIndex = 0;
+            } else if (currentImageIndex < 0) {
+                currentImageIndex = images.length - 1;
+            }
+            showModal(images[currentImageIndex].src);
+        }
+
+    </script>
+
+</body>
+
+</html>

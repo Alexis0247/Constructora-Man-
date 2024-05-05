@@ -147,11 +147,13 @@ h3 {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 300px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    left: -160px; /* Ajusta la posición a la izquierda del menú principal */
-    top: 0; /* Alinea el submenú con la parte superior del menú principal */
+    right: 115px;
+    /* Ajusta la posición a la izquierda del menú principal */
+    top: 0;
+    /* Alinea el submenú con la parte superior del menú principal */
 }
 
 .submenu-content a {
