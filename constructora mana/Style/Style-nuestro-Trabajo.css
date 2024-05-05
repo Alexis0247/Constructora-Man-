@@ -1,0 +1,281 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/**************************************************************/
+/*NAVBAR*/
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #DED6D1;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background: #090C08;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
+    /* Agrega una sombra */
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+    margin-top: 7px;
+
+}
+
+.logo {
+    margin-left: 30px;
+    padding: 40px;
+    width: 10%;
+
+}
+.logo img{
+    width: 150px;
+    height: auto;
+}
+
+.navbar a {
+    display: block;
+    padding: 23px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: color 0.4s;
+}
+
+.navbar a:hover {
+    color: #09A603;
+}
+
+.dropbtn {
+    background-color: #090C08;
+    color: white;
+    padding: 13px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-right: 45px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: auto;
+    right: 0;
+    /* Ajusta el menú para que se abra hacia la derecha */
+    opacity: 0;
+    max-height: none; /* Cambiado a 'none' */
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.dropdown-content a,
+.dropdown-content a:hover,
+.dropdown-content a:visited,
+.dropdown-content a:focus {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a:focus {
+    background-color: #09A603;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #09A603;
+}
+
+
+
+.call-us {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    margin-right: 100PX;
+}
+
+.call-text {
+    margin-right: 10px;
+    /* Espacio entre el texto y el número */
+    color: #DED6D1;
+    padding-right: 10px;
+    /* Espacio adicional a la derecha del texto */
+    border-right: 3px solid #DED6D1;
+    /* Borde derecho */
+    font-size: 25px;
+}
+
+.phone-number {
+    font-size: 25px;
+    color: #DED6D1;
+}
+
+
+
+
+
+
+.submenu {
+    position: relative;
+    display: inline-block;
+}
+
+.submenu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 115px;
+    /* Ajusta la posición a la izquierda del menú principal */
+    top: 0;
+    /* Alinea el submenú con la parte superior del menú principal */
+}
+
+.submenu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu-content a:hover {
+    background-color: #09A603;
+    color: white;
+}
+
+.submenu:hover .submenu-content {
+    display: block;
+}
+
+
+
+
+/*FIN DE NAVBAR*/
+/**************************************************************************/
+
+/**********************************************************/
+/*CONTENIDO*/
+.content-about-more {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+    background: #090C08;
+    height: 100vb !important;
+}
+/*FIN DE CONTENIDO*/
+/***********************************************************/
+
+/*************************************************************/
+
+
+/***************************************************************************/
+/*WHATSAPP BOTON*/
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes slideIn {
+    from { right: -100px; } /* Empieza fuera de la pantalla */
+    to { right: 70px; } /* Termina en la posición deseada */
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 50px;
+    right: 70px;
+    transition: transform 0.5s ease-in-out;
+    animation: slideIn 1s forwards; /* Animación de entrada */
+}
+
+.whatsapp-btn img {
+    width: 60px;
+    height: auto;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.2); /* Cambia el tamaño al pasar el mouse sobre él */
+}
+/*WHATSAPP BOTON*/
+/***************************************************************************/
+/**********************************************************************/
+/* contactenos */
+
+.content-contact {
+    padding: 100px;
+    background: #DED6D1;
+    height: 78vb !important;
+}
+
+.content-contact p {
+    margin-bottom: 2px;
+    color: #090C08;
+}
+
+.content-contact .title {
+    color: #090C08;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+
+/*FIN DE CONTACTOS*/
+/*******************************************************************/
