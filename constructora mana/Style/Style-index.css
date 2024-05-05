@@ -15,6 +15,24 @@
 
 }
 
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: white;
+    line-height: 2;
+
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+
 /**************************************************************/
 /*NAVBAR*/
 body {
@@ -55,8 +73,6 @@ h3 {
 
 .logo {
     margin-left: 30px;
-    padding: 40px;
-    width: 10%;
 
 }
 
@@ -163,9 +179,6 @@ h3 {
 }
 
 
-
-
-
 .submenu {
     position: relative;
     display: inline-block;
@@ -201,6 +214,64 @@ h3 {
 }
 
 
+
+
+.card {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* instagram*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
 /*FIN DE NAVBAR*/
 /**************************************************************************/
 
@@ -225,7 +296,7 @@ h3 {
 }
 
 .title {
-    margin-bottom: 10px;
+    margin-bottom: px;
     font-size: 69px;
     font-weight: 640;
     text-transform: uppercase;
@@ -305,6 +376,101 @@ p {
     opacity: 0.5;
     /* Valor de opacidad (0 es completamente transparente, 1 es completamente opaco) */
     max-width: none;
+}
+
+.content-service {
+    padding: 50px;
+    background: #090C08;
+}
+
+.carousel {
+    position: relative;
+    width: 70%;
+    /* Cambia el ancho del carousel según tu preferencia */
+    margin: 0 auto;
+    /* Centra el carousel horizontalmente */
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+    /* Ajusta la velocidad de transición */
+}
+
+.carousel-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Ajusta la imagen para llenar el contenedor */
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* Alinea los elementos en el extremo inferior */
+    align-items: flex-start;
+    /* Alinea los elementos a la izquierda */
+    box-sizing: border-box;
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+}
+
+.carousel-caption h1,
+.carousel-caption p,
+.carousel-caption {
+    margin: 0;
+}
+
+.carousel-caption h1 {
+    font-size: 50px
+}
+
+.content-carousel {
+    margin: 30px;
+}
+
+
+.carousel-caption button {
+    margin-top: 20px;
+}
+
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    z-index: 1;
+    /* Asegura que las flechas estén sobre las imágenes */
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.title {
+    color: #fff;
 }
 
 
