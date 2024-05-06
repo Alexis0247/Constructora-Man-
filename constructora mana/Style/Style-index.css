@@ -246,7 +246,7 @@ h3 {
 }
 
 .socialSvg {
-    width: 17px;
+    width: 25px;
 }
 
 .socialSvg path {
@@ -281,7 +281,7 @@ h3 {
 .header {
     height: 150vh !important;
     /* Modifica el tamaño de la imagen del encabezado */
-    background: url(/constructora\ mana/img/portada.jpg) no-repeat center;
+    background: url(../img/Portada.jpg) no-repeat center;
     /* Agrega la imagen del encabezado */
     background-size: cover;
     /* Hace que la imagen del encabezado se agrande a medida de la pantalla*/
