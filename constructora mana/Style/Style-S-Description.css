@@ -234,19 +234,24 @@ h3 {
     transition-duration: .3s;
 }
 
-/* linkdin*/
+/* facebook*/
 .containerThree:hover {
     background-color: #0072b1;
     transition-duration: .3s;
 }
 
+.containerYouTube:hover {
+    background-color: #CC0000; /* Cambia el color de fondo al pasar el mouse */
+}
 .socialContainer:active {
     transform: scale(0.9);
     transition-duration: .3s;
 }
 
 .socialSvg {
-    width: 25px;
+    width: 30px; /* Ajusta el tamaño del ícono */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    fill: white; /* Color del ícono */
 }
 
 .socialSvg path {

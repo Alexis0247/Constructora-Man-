@@ -7,7 +7,7 @@
 }
 
 .content {
-    height: 50vh;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -219,19 +219,24 @@ h3 {
     transition-duration: .3s;
 }
 
-/* linkdin*/
+/* facebook*/
 .containerThree:hover {
     background-color: #0072b1;
     transition-duration: .3s;
 }
 
+.containerYouTube:hover {
+    background-color: #CC0000; /* Cambia el color de fondo al pasar el mouse */
+}
 .socialContainer:active {
     transform: scale(0.9);
     transition-duration: .3s;
 }
 
 .socialSvg {
-    width: 25px;
+    width: 30px; /* Ajusta el tamaño del ícono */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    fill: white; /* Color del ícono */
 }
 
 .socialSvg path {
@@ -255,7 +260,6 @@ h3 {
 }
 
 
-
 /*FIN DE NAVBAR*/
 /**************************************************************************/
 
@@ -266,12 +270,166 @@ h3 {
     padding-right: 200px;
     padding-top: 100px;
     background: #090C08;
-    height: 100vb !important;
+    height: auto !important;
 }
 /*FIN DE CONTENIDO*/
 /***********************************************************/
 
 /*************************************************************/
+
+
+/************************************************************/
+
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  .modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    display: block;
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Botones de navegación */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    outline: none;
+  }
+  
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+
+
+
+
+
+/************************************************************/
+
+
+
+
+/*********************************************************/
+/*INICIO DE LA GALERIA DE IMAGENES*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.image-container {
+    width: calc(25% - 20px);
+    /* 25% para que haya 4 imágenes por fila, ajusta según tu diseño */
+    margin: 10px;
+    position: relative;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto    ;
+}
+.image-container video {
+    max-width: 100%;
+    height: auto    ;
+}
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el video para llenar el contenedor */
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajustar el tamaño del overlay al 100% del contenedor */
+    height: 100%; /* Ajustar el tamaño del overlay al 100% del contenedor */
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.image-container:hover img {
+    filter: brightness(70%);
+}
+.image-container:hover video {
+    filter: brightness(70%);
+}
+
+
+
+/*FIN DE LA GALERIA DE IMAGENES*/
+/**************************************************************/
 
 
 /***************************************************************************/
@@ -324,7 +482,7 @@ h3 {
 }
 
 .title {
-    margin-bottom: 40px;
+    margin-top: 75px;
     font-size: 60px;
     font-weight: 600;
     text-transform: uppercase;
