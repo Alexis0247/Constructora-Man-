@@ -39,22 +39,15 @@
                 <span class="phone-number">+123456789</span>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">Menu</button>
-                <div class="dropdown-content">
-                    <a href="index.html">Inicio</a>
-                    <a href="Sobre-Nosotros.html">Sobre Nosotros</a>
-                    <a href="Nuestro-Trabajo.html">Nuestro Trabajo</a>
-                    <div class="submenu">
+                <div class="dropdown">
+                    <button class="dropbtn">Menu</button>
+                    <div class="dropdown-content">
+                        <a href="index.html">Inicio</a>
+                        <a href="Sobre-Nosotros.html">Sobre Nosotros</a>
+                        <a href="Nuestro-Trabajo.html">Nuestro Trabajo</a>
                         <a href="Servicios.html">Servicios</a>
-                        <div class="submenu-content">
-                            <a href="Servicios/Serv-Construccion.html">Servicio deConstruccion</a>
-                            <a href="Servicios/Proyectos_R_U_R-.html">proyectos Resindeciales Urbanos y Rurales</a>
-                            <a href="Servicios/Asesoramiento.html">Asesoramiento en Mejoramiento de Terrenos</a>
-                            <a href="Servicios/Remodelaciones.html">Remodelaciones y Ampliaciones</a>
-                            <a href="Servicios/Proyecyos-PYR.html">Proyectos Particulares y Privados</a>
-                        </div>
+                        <a href="Contactanos.html">Contactos</a>
                     </div>
-                    <a href="Contactanos.html">Contactos</a>
                 </div>
             </div>
         </nav>
@@ -70,12 +63,16 @@
                 <img src="img/img_fondo.jpg" alt="Imagen de ejemplo">
             </section>
             <section class="service-content">
-                <h3 class="title">Servicio de Construccion</h3>
-                <p> Construcción de terrazas, techos, y otras estructuras para mejorar y ampliar áreas exteriores de viviendas.
-                    Restauración y elaboración de escaleras, mesas y otros elementos personalizados.
+                <h3 class="title">Servicio de Construcción</h3>
+                <p id="intro-text-1">
+                    Construcción de terrazas, techos, y otras estructuras para mejorar y ampliar áreas exteriores de viviendas...
                 </p>
-                <button function="" class="cta">
-                    <span  class="hover-underline-animation"> Leer más </span>
+                <p id="additional-text-1" style="display: none;">
+                    Construcción de terrazas, techos, y otras estructuras para mejorar y ampliar áreas exteriores de viviendas
+                    restauración y elaboración de escaleras, mesas y otros elementos personalizados.
+                </p>
+                <button onclick="showMore('intro-text-1', 'additional-text-1', 'button-text-1')" class="cta">
+                    <span class="hover-underline-animation" id="button-text-1"> Leer más </span>
                     <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
                         viewBox="0 0 46 16" fill="#09A603">
                         <path id="Path_10" data-name="Path 10"
@@ -85,16 +82,19 @@
                 </button>
             </section>
         </div>
-    </section>
+    </section>     
     <section class="service">
         <div class="content-service">
             <section class="service-content">
                 <h3 class="title">proyectos Resindeciales Urbanos y Rurales</h3>
-                <p>Desarrollo y construcción de proyectos habitacionales tanto en áreas urbanas como rurales.
-                    Experiencia de más de 30 años en este campo, posicionándose como una empresa líder en las regiones de los lagos y los ríos.
+                <p id="intro-text-2">Desarrollo y construcción de proyectos habitacionales tanto en áreas urbanas como rurales...
                 </p>
-                <button class="cta">
-                    <span class="hover-underline-animation"> Leer más </span>
+                <p id="additional-text-2" style="display: none;">
+                    Desarrollo y construcción de proyectos habitacionales tanto en áreas urbanas como rurales
+                    experiencia de más de 30 años en este campo, posicionándose como una empresa líder en las regiones de los lagos y los ríos.
+                </p>
+                <button onclick="showMore('intro-text-2', 'additional-text-2', 'button-text-2')" class="cta">
+                    <span class="hover-underline-animation" id="button-text"> Leer más </span>
                     <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
                         viewBox="0 0 46 16" fill="#09A603">
                         <path id="Path_10" data-name="Path 10"
@@ -115,11 +115,12 @@
             </section>
             <section class="service-content">
                 <h3 class="title">Remodelaciones y Ampliaciones</h3>
-                <p>Remodelación de espacios existentes, ampliaciones de viviendas y otros tipos de renovaciones.
-                    Uso de materiales reciclados en ciertos proyectos para promover la sostenibilidad ambiental.
+                <p id="intro-text-3">Remodelación de espacios existentes, ampliaciones de viviendas y otros tipos de renovaciones...
+                    
                 </p>
-                <button onclick="hacemeClick()" class="cta">
-                    <span class="hover-underline-animation"> Leer más </span>
+                <p id="additional-text-3" style="display: none;">Remodelación de espacios existentes, ampliaciones de viviendas y otros tipos de renovaciones uso de materiales reciclados en ciertos proyectos para promover la sostenibilidad ambiental.</p>
+                <button onclick="showMore('intro-text-3', 'additional-text-3', 'button-text-3')" class="cta">
+                    <span class="hover-underline-animation" id="button-text"> Leer más </span>
                     <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
                         viewBox="0 0 46 16" fill="#09A603">
                         <path id="Path_10" data-name="Path 10"
@@ -134,10 +135,11 @@
         <div class="content-service">
             <section class="service-content">
                 <h3 class="title">Asesoramiento en Mejoramiento de Terrenos</h3>
-                <p>Evaluación y recomendaciones para mejorar terrenos destinados a diferentes usos, como prados, canchas de fútbol, entre otros.
+                <p id="intro-text-4">Evaluación y recomendaciones para mejorar terrenos destinados...
                 </p>
-                <button class="cta">
-                    <span class="hover-underline-animation"> Leer más </span>
+                <p id="additional-text-4" style="display: none;">Evaluación y recomendaciones para mejorar terrenos destinados a diferentes usos, como prados, canchas de fútbol, entre otros.</p>
+                <button onclick="showMore('intro-text-4', 'additional-text-4', 'button-text-4')" class="cta">
+                    <span class="hover-underline-animation" id="button-text"> Leer más </span>
                     <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
                         viewBox="0 0 46 16" fill="#09A603">
                         <path id="Path_10" data-name="Path 10"
@@ -159,11 +161,13 @@
             </section>
             <section class="service-content">
                 <h3 class="title">Proyectos Particulares y Privados</h3>
-                <p>Diseño y construcción de proyectos personalizados según las necesidades y deseos del cliente.
-                    Ofrecen asesoramiento especializado para proyectos privados, garantizando un servicio adaptado y de alta calidad.
+                <p id="intro-text-5">Diseño y construcción de proyectos personalizados según las necesidades y deseos del cliente...
                 </p>
-                <button class="cta">
-                    <span class="hover-underline-animation"> Leer más </span>
+                <p id="additional-text-5" style="display: none;">
+                    Diseño y construcción de proyectos personalizados según las necesidades y deseos del cliente.
+                    Ofrecen asesoramiento especializado para proyectos privados, garantizando un servicio adaptado y de alta calidad.</p>
+                <button onclick="showMore('intro-text-5', 'additional-text-5', 'button-text-5')" class="cta">
+                    <span class="hover-underline-animation" id="button-text"> Leer más </span>
                     <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
                         viewBox="0 0 46 16" fill="#09A603">
                         <path id="Path_10" data-name="Path 10"
@@ -187,6 +191,23 @@
     <a href="https://web.whatsapp.com/" class="whatsapp-btn" target="_blank">
         <img src="img/whatsapp.png" alt="WhatsApp Icon">
     </a>
+    <script>
+            function showMore(introId, additionalId, buttonId) {
+        var introText = document.getElementById(introId);
+        var additionalText = document.getElementById(additionalId);
+        var buttonText = document.getElementById(buttonId);
+        
+        if (additionalText.style.display === 'none') {
+            introText.style.display = 'none';
+            additionalText.style.display = 'block';
+            buttonText.textContent = 'Leer menos';
+        } else {
+            introText.style.display = 'block';
+            additionalText.style.display = 'none';
+            buttonText.textContent = 'Leer más';
+        }
+    }
+    </script>
 </body>
 
 </html>
