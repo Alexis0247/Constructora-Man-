@@ -179,43 +179,6 @@ h3 {
 }
 
 
-.submenu {
-    position: relative;
-    display: inline-block;
-}
-
-.submenu-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 300px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    right: 115px;
-    /* Ajusta la posición a la izquierda del menú principal */
-    top: 0;
-    /* Alinea el submenú con la parte superior del menú principal */
-}
-
-.submenu-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.submenu-content a:hover {
-    background-color: #09A603;
-    color: white;
-}
-
-.submenu:hover .submenu-content {
-    display: block;
-}
-
-
-
-
 .card {
     width: fit-content;
     height: fit-content;
@@ -284,7 +247,7 @@ h3 {
 .header {
     height: 150vh !important;
     /* Modifica el tamaño de la imagen del encabezado */
-    background: url(../img/Portada.jpg) no-repeat center;
+    background: url(../img/img_fondo.jpg) no-repeat center;
     /* Agrega la imagen del encabezado */
     background-size: cover;
     /* Hace que la imagen del encabezado se agrande a medida de la pantalla*/
@@ -299,8 +262,7 @@ h3 {
 }
 
 .title {
-    margin-bottom: px;
-    font-size: 69px;
+    font-size: 65px;
     font-weight: 640;
     text-transform: uppercase;
     color: white;
