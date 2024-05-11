@@ -312,6 +312,70 @@ p {
 }
 
 
+
+.redes-sociales-container {
+    display: flex;
+    justify-content: center; /* Alinear los botones horizontalmente en el centro */
+    align-items: center; /* Alinear los botones verticalmente en el centro */
+    height: 100vh; /* Ajustar la altura según la pantalla */
+  }
+  
+  .redes-sociales .btn1 {
+    display: flex;
+    flex-direction: column; /* Colocar los botones en posición vertical */
+    align-items: center;
+    text-align: center; /* Alinear el texto dentro del botón */
+    justify-content: center;
+}
+
+.redes-sociales .btn1 span {
+    margin-left: 5px; /* Agregar espacio a la izquierda del texto */
+    margin-top: 5px; /* Agregar espacio arriba del texto */
+    display: flex; /* Alinear elementos en el eje horizontal */
+    align-items: center; /* Alinear elementos verticalmente */
+    
+}
+.redes-sociales .btn1 svg {
+    margin-right: 19px; /* Agregar espacio entre el logo y el texto */
+}
+.redes-sociales .btn1 {
+    margin: 10px; /* Espacio entre los botones */
+    color: white; /* Color del texto del botón */
+    border: none; /* Eliminar el borde del botón */
+    border-radius: 5px; /* Radio de borde para darle forma al botón */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    
+}
+a{
+    text-decoration: none; /* Eliminar la subrayado de los enlaces */
+}
+/* Estilos específicos para cada botón */
+.rhfacebook-btn:hover {
+    background-color: #007bff; /* Color de fondo del botón */
+}
+
+.rhinstagram-btn:hover {
+    background-color: #d62976; /* Color de fondo del botón */
+}
+
+.rhwhatsapp-btn:hover {
+    background-color: rgb(0, 164, 14); /* Color de fondo del botón */
+}
+
+.rhyoutube-btn:hover {
+    background-color: #CC0000; /* Color de fondo del botón */
+}
+.socialSvg {
+    width: 30px; /* Ajusta el tamaño del ícono */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    fill: white; /* Color del ícono */
+}
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+
+
 /*FIN CONTENIDO DE ACOMPAÑANTE DE FORMULARIO*/
 /*************************************************************/
 
