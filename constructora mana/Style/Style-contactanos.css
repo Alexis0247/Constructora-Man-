@@ -172,7 +172,7 @@ h3 {
     transform: translateY(-50%);
     background-color: white;
     width: 40%;
-    padding: 20px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -329,7 +329,7 @@ p {
 }
 
 .redes-sociales .btn1 span {
-    margin-left: 5px; /* Agregar espacio a la izquierda del texto */
+    margin-left: 10px; /* Agregar espacio a la izquierda del texto */
     margin-top: 5px; /* Agregar espacio arriba del texto */
     display: flex; /* Alinear elementos en el eje horizontal */
     align-items: center; /* Alinear elementos verticalmente */
@@ -439,3 +439,114 @@ a{
 }
 /*WHATSAPP BOTON*/
 /***************************************************************************/
+@media only screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+    }
+
+    .content {
+        height: auto;
+        padding: 20px;
+    }
+
+    body {
+        text-align: center;
+        font-family: sans-serif;
+        background-color: #DED6D1;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    .head {
+        height: auto;
+        flex-direction: column;
+        top: 0%;
+    }
+
+    .navbar {
+        margin: 0;
+        justify-content: center;
+    }
+
+    .logo {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+    .logo img {
+        width: 80%;
+        max-width: 150px;
+        height: auto;
+    }
+
+    .navbar a {
+        padding: 10px 0;
+    }
+
+    .dropbtn {
+        margin-right: 0;
+    }
+    .dropdown-content{
+        justify-content: center;
+        position: relative;
+    }
+    .call-us {
+        margin-right: 0;
+    }
+    .content-contacto{
+        margin-top: 180px;
+    }
+
+    .schedule_box_container1,
+    .schedule_box_container2 {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: none;
+        padding: 10px;
+    }
+
+    .input-container,
+    .input-container label,
+    .input-container input[type="text"],
+    .input-container textarea,
+    .date-input {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+
+    .content-about,
+    .content-contacto,
+    .content-contact {
+        padding: 20px;
+        height: auto !important;
+    }
+
+    .content-contact p {
+        margin-bottom: 10px;
+    }
+
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 20px;
+    }
+    iframe{
+        width: 100%;
+    }
+    /* Resto*/
+    .redes-sociales, .btn1{
+        
+        width: 90%;
+    }
+} 

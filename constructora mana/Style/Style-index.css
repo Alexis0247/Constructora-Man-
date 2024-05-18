@@ -70,6 +70,9 @@ h3 {
     margin-top: 7px;
 
 }
+.redes-Sociales{
+    display: flex;
+}
 
 .logo {
     margin-left: 30px;
@@ -154,31 +157,6 @@ h3 {
 
 
 
-.call-us {
-    display: flex;
-    justify-content: center;
-    /* Centra horizontalmente */
-    align-items: center;
-    /* Centra verticalmente */
-    margin-right: 100PX;
-}
-
-.call-text {
-    margin-right: 10px;
-    /* Espacio entre el texto y el número */
-    color: #DED6D1;
-    padding-right: 10px;
-    /* Espacio adicional a la derecha del texto */
-    border-right: 3px solid #DED6D1;
-    /* Borde derecho */
-    font-size: 25px;
-}
-
-.phone-number {
-    font-size: 25px;
-    color: #DED6D1;
-}
-
 
 .card {
     width: fit-content;
@@ -247,19 +225,21 @@ h3 {
 
 .header {
     height: 150vh !important;
-    /* Modifica el tamaño de la imagen del encabezado */
     background: url(../img/img_fondo.jpg) no-repeat center;
-    /* Agrega la imagen del encabezado */
     background-size: cover;
-    /* Hace que la imagen del encabezado se agrande a medida de la pantalla*/
     background-attachment: fixed;
-    /* Fija la imagen de fondo */
+    width: 100%; /* Asegúrate de que el header ocupe el 100% del ancho */
+    margin: 0; /* Elimina cualquier margen que podría causar desbordamiento */
+    padding: 0; /* Elimina cualquier padding que podría causar desbordamiento */
 }
 
 .btn-home {
     display: flex;
     z-index: 1001;
     /* Asegura que el botón esté por encima del encabezado */
+}
+.btn-home .btn-btn{
+    width: 20%;
 }
 
 .title {
@@ -627,3 +607,88 @@ p {
 
 /*FIN DE MAPA*/
 /***************************************************************/
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    p {
+        padding: 10px;
+        text-align: center;
+    }
+    .logo img {
+        width: 80px;
+    }
+    .call-us {
+        display: none;
+    }
+    .logo {
+        margin-left: 0;
+        padding: 30px;
+    }
+    .title {
+        text-align: center;
+        padding-left: 0px;
+        font-size: 40px;
+    }
+    .header {
+        height: 100vh !important; /* Ajusta la altura en móviles si es necesario */
+        background-size: cover;
+        padding: 20PX;
+    }
+    .header-content {
+        left: 55%; /* Centra horizontalmente */
+    }
+    .btn-home .btn-btn {
+        width: 40%;
+    }
+    .content-service {
+        padding: 50px;
+        width: 100%;
+    }
+    .how-we-work {
+        width: 100%;
+    }
+    .content-how-we-work {
+        flex-direction: column;
+    }
+    .how-we-work-content {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .content-contact .title {
+        font-size: 40px;
+    }
+    .content-service, .content-about, .content-contact, .how-we-work {
+        padding: 20px;
+        width: 100%;
+    }
+    .content-about {
+        height: 100vh !important;
+    }
+    .how-we-work .image-area {
+        width: 100%;
+        justify-content: center;
+    }
+    .carousel {
+        width: 100%;
+        margin: 0;
+    }
+    .carousel-caption {
+        width: 100%;
+        margin: 0;
+    }
+    .content-carousel p {
+        font-size: 10px;
+    }
+    .whatsapp-btn {
+        right: 20px;
+    }
+    iframe {
+        width: 100%;
+    }
+    .content-carousel {
+        margin: 5px;
+    }
+    .carousel-caption h1 {
+        font-size: 45px;
+    }
+}

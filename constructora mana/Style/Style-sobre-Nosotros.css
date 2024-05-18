@@ -14,6 +14,25 @@
     align-items: center;
 
 }
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: white;
+    line-height: 2;
+
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+
 /**************************************************************/
 /*NAVBAR*/
 body {
@@ -51,14 +70,17 @@ h3 {
     margin-top: 7px;
 
 }
+.redes-Sociales{
+    display: flex;
+}
 
 .logo {
     margin-left: 30px;
     padding: 40px;
     width: 10%;
-
 }
-.logo img{
+
+.logo img {
     width: 150px;
     height: auto;
 }
@@ -103,7 +125,8 @@ h3 {
     right: 0;
     /* Ajusta el menú para que se abra hacia la derecha */
     opacity: 0;
-    max-height: none; /* Cambiado a 'none' */
+    max-height: none;
+    /* Cambiado a 'none' */
     transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
@@ -127,34 +150,11 @@ h3 {
     opacity: 1;
     display: block;
 }
+
 .dropdown:hover .dropbtn {
     background-color: #09A603;
 }
 
-.call-us {
-    display: flex;
-    justify-content: center;
-    /* Centra horizontalmente */
-    align-items: center;
-    /* Centra verticalmente */
-    margin-right: 100PX;
-}
-
-.call-text {
-    margin-right: 10px;
-    /* Espacio entre el texto y el número */
-    color: #DED6D1;
-    padding-right: 10px;
-    /* Espacio adicional a la derecha del texto */
-    border-right: 3px solid #DED6D1;
-    /* Borde derecho */
-    font-size: 25px;
-}
-
-.phone-number {
-    font-size: 25px;
-    color: #DED6D1;
-}
 
 
 
@@ -217,21 +217,16 @@ h3 {
 }
 
 
-
-/*FIN DE NAVBAR*/
-/**************************************************************************/
-
-/*************************************************************/
-/*CONTENIDO DE SOBRE NOSOTROS*/
-
+/* Sección "Sobre Nosotros" */
 .title {
     margin-bottom: 40px;
     font-size: 60px;
     font-weight: 600;
     text-transform: uppercase;
     color: white;
+    width: 100%; /* Asegura que el título ocupe todo el ancho del contenedor */
+    text-align: center; /* Centra el título */
 }
-
 
 .header-about .header-content-about h2 {
     position: absolute;
@@ -240,21 +235,18 @@ h3 {
     text-align: center;
     width: 40%;
     top: 30%;
-    transform: translate(-50%, -50%);
-    /* Centra el contenido */
+    transform: translate(-50%, -50%); /* Centra el contenido */
+}
+
+.content-about-more {
+    padding: 100px 200px;
+    background: #090C08;
+    height: 100vh !important;
 }
 
 .content-about-more p {
     color: #DED6D1;
     text-align: justify;
-}
-
-.content-about-more {
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 100px;
-    background: #090C08;
-    height: 100vb !important;
 }
 
 .cita {
@@ -263,33 +255,18 @@ h3 {
 }
 
 .cita p {
-    border-left-width: 4px;
-    border-left-style: solid;
+    border-left: 4px solid;
     text-align: left;
     padding-left: 6%;
     font-size: 30px;
 }
 
-
-p {
-    margin-bottom: 40px;
-    font-size: 18px;
-    color: white;
-    line-height: 2;
-
-}
-
-/*FIN CONTENIDO DE SOBRE NOSOTROS*/
-/*************************************************************/
-
-
-/**********************************************************************/
-/* contactenos */
-
+/* Sección "Contáctenos" */
 .content-contact {
     padding: 100px;
     background: #DED6D1;
-    height: 75vb !important;
+    height: 75vh !important;
+    text-align: center; /* Asegura que el texto dentro del contenedor esté centrado */
 }
 
 .content-contact p {
@@ -297,29 +274,23 @@ p {
     color: #090C08;
 }
 
-.content-contact .title{
+.content-contact .title {
     color: #090C08;
     margin-bottom: 40px;
     font-size: 60px;
     font-weight: 600;
     text-transform: uppercase;
-
+    width: 100%; /* Asegura que el título ocupe todo el ancho del contenedor */
+    text-align: center; /* Centra el título */
 }
 
-
-/*FIN DE CONTACTOS*/
-/*******************************************************************/
-
-
-
-/***************************************************************************/
-/*WHATSAPP BOTON*/
-
+/* Botón de WhatsApp */
 @keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
+
 @keyframes slideIn {
     from { right: -100px; } /* Empieza fuera de la pantalla */
     to { right: 70px; } /* Termina en la posición deseada */
@@ -341,5 +312,66 @@ p {
 .whatsapp-btn:hover {
     transform: scale(1.2); /* Cambia el tamaño al pasar el mouse sobre él */
 }
-/*WHATSAPP BOTON*/
-/***************************************************************************/
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    p {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .logo {
+        margin-left: 0;
+        padding: 30px;
+    }
+
+    .title {
+        font-size: 40px;
+        width: 100%; /* Asegura que el título ocupe todo el ancho del contenedor */
+        text-align: center;
+        padding-left: 0;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .modal-content {
+        max-height: 213px;
+    }
+
+    .content-about-more {
+        padding: 36px;
+        width: 100%;
+    }
+
+    .content-about-more p {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .header-content-about .title {
+        font-size: 40px;
+    }
+
+    .content-contact {
+        padding: 36px;
+        width: 100%;
+        text-align: center; /* Asegura que el texto dentro del contenedor esté centrado */
+    }
+
+    .content-contact .title {
+        text-align: center;
+        margin: 0 auto; /* Centra el título horizontalmente */
+        font-size: 40px;
+    }
+
+    .header-about .header-content-about h2 {
+        width: 100%;
+        left: 58%;
+    }
+}
