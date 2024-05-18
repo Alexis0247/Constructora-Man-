@@ -1,30 +1,27 @@
-/* Restablecer estilos predeterminados */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
+    margin: 0%;
+    padding: 0%;
     vertical-align: baseline;
 }
 
-/* Contenido principal */
 .content {
     height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
 
-/* Párrafos */
+}
 p {
     margin-bottom: 40px;
-    font-size: 18px;
+    font-size: 20px;
     color: white;
     line-height: 2;
+
 }
 
-/* Estilos del cuerpo y el encabezado */
+/**************************************************************/
+/*NAVBAR*/
 body {
     text-align: center;
     font-family: sans-serif;
@@ -51,21 +48,23 @@ h3 {
     width: 100%;
     z-index: 100;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
+    /* Agrega una sombra */
 }
 
 .navbar {
     display: flex;
     margin-right: 10px;
     margin-top: 7px;
+
 }
 
 .logo {
     margin-left: 30px;
     padding: 40px;
     width: 10%;
-}
 
-.logo img {
+}
+.logo img{
     width: 150px;
     height: auto;
 }
@@ -84,7 +83,6 @@ h3 {
     color: #09A603;
 }
 
-/* Botón desplegable */
 .dropbtn {
     background-color: #090C08;
     color: white;
@@ -107,20 +105,26 @@ h3 {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    left: auto;
     right: 0;
+    /* Ajusta el menú para que se abra hacia la derecha */
     opacity: 0;
-    max-height: none;
+    max-height: none; /* Cambiado a 'none' */
     transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
-.dropdown-content a {
+.dropdown-content a,
+.dropdown-content a:hover,
+.dropdown-content a:visited,
+.dropdown-content a:focus {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover,
+.dropdown-content a:focus {
     background-color: #09A603;
     color: white;
 }
@@ -129,24 +133,27 @@ h3 {
     opacity: 1;
     display: block;
 }
-
 .dropdown:hover .dropbtn {
     background-color: #09A603;
 }
 
-/* Contacto */
 .call-us {
     display: flex;
     justify-content: center;
+    /* Centra horizontalmente */
     align-items: center;
-    margin-right: 100px;
+    /* Centra verticalmente */
+    margin-right: 100PX;
 }
 
 .call-text {
     margin-right: 10px;
+    /* Espacio entre el texto y el número */
     color: #DED6D1;
     padding-right: 10px;
+    /* Espacio adicional a la derecha del texto */
     border-right: 3px solid #DED6D1;
+    /* Borde derecho */
     font-size: 25px;
 }
 
@@ -155,7 +162,9 @@ h3 {
     color: #DED6D1;
 }
 
-/* Tarjetas */
+
+
+
 .card {
     width: fit-content;
     height: fit-content;
@@ -163,39 +172,39 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25px;
+    padding: 25px 25px;
     gap: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
 }
 
-/* Animaciones de íconos sociales */
+/* instagram*/
 .containerOne:hover {
     background-color: #d62976;
-    transition-duration: 0.3s;
+    transition-duration: .3s;
 }
 
+/* facebook*/
 .containerThree:hover {
     background-color: #0072b1;
-    transition-duration: 0.3s;
+    transition-duration: .3s;
 }
 
 .containerYouTube:hover {
-    background-color: #CC0000;
+    background-color: #CC0000; /* Cambia el color de fondo al pasar el mouse */
 }
-
 .socialContainer:active {
     transform: scale(0.9);
-    transition-duration: 0.3s;
+    transition-duration: .3s;
 }
 
 .socialSvg {
-    width: 30px;
-    height: auto;
-    fill: white;
+    width: 30px; /* Ajusta el tamaño del ícono */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    fill: white; /* Color del ícono */
 }
 
 .socialSvg path {
-    fill: white;
+    fill: rgb(255, 255, 255);
 }
 
 .socialContainer:hover .socialSvg {
@@ -207,64 +216,71 @@ h3 {
         transform: translateY(-50px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
     }
 }
 
-/* Encabezado adicional */
+
+
+/*FIN DE NAVBAR*/
+/**************************************************************************/
+/*********************************************************************/
+/*HEADER*/
 .header-about .header-content-about h2 {
     position: absolute;
     color: #090C08;
     align-items: center;
     text-align: center;
-    top: 30%;
+    top: 20%;
     transform: translate(-50%, -50%);
-    white-space: nowrap;
+    /* Centra el contenido */
+    white-space: nowrap; /* Evita el salto de línea */
 }
+.content {
+    height: 80vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-.content-about-more {
-    padding: 36px 200px;
-    background: #090C08;
-    height: 100vh !important;
 }
+/*FIN DE HEADER*/
+/*********************************************************************/
+/********************************************************************/
+/*CONTENIDO DE SERVICIO*/
 
-.content-about-more p {
-    color: #DED6D1;
-    text-align: justify;
-}
-
-/* Contenido del servicio */
 .service {
-    padding: 0;
-    margin: 0;
+    padding: 0%;
+    margin: 0%;
     background: #090C08;
-    height: 128vh !important;
+    height: auto !important;
     align-items: center;
     align-content: center;
 }
 
+
+
 .service-content {
     padding: 50px;
-    margin: 0;
-    width: 70%;
-    padding-left: 50px;
-    text-align: left;
+    margin: 0%;
 }
 
-.image-area-service img {
+.image-area-service img{
     width: 100%;
     height: 70%;
     object-fit: cover;
 }
 
+
 .content-service {
-    display: flex;
     padding: 130px;
     background: #090C08;
-    height: 128vh !important;
 }
+
+
 
 .title {
     margin-bottom: 40px;
@@ -274,11 +290,19 @@ h3 {
     color: white;
 }
 
-/* Contacto */
+
+/*FIN DE CONTENIDO DE SERVICIO*/
+/************************************************************************/
+
+
+/**********************************************************************/
+/* contactenos */
+
+
 .content-contact {
     padding: 100px;
     background: #DED6D1;
-    height: 75vh !important;
+    height: 75vb !important;
 }
 
 .content-contact p {
@@ -290,16 +314,21 @@ h3 {
     color: #090C08;
 }
 
-/* Botón de WhatsApp */
+
+/*FIN DE CONTACTOS*/
+/*******************************************************************/
+
+/***************************************************************************/
+/*WHATSAPP BOTON*/
+
 @keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
-
 @keyframes slideIn {
-    from { right: -100px; }
-    to { right: 70px; }
+    from { right: -100px; } /* Empieza fuera de la pantalla */
+    to { right: 70px; } /* Termina en la posición deseada */
 }
 
 .whatsapp-btn {
@@ -307,7 +336,7 @@ h3 {
     bottom: 50px;
     right: 70px;
     transition: transform 0.5s ease-in-out;
-    animation: slideIn 1s forwards;
+    animation: slideIn 1s forwards; /* Animación de entrada */
 }
 
 .whatsapp-btn img {
@@ -316,8 +345,10 @@ h3 {
 }
 
 .whatsapp-btn:hover {
-    transform: scale(1.2);
+    transform: scale(1.2); /* Cambia el tamaño al pasar el mouse sobre él */
 }
+/*WHATSAPP BOTON*/
+/***************************************************************************/
 
 /* Media queries para pantallas pequeñas */
 @media screen and (max-width: 768px) {
@@ -333,35 +364,47 @@ h3 {
         padding: 30px;
     }
     .title {
-        text-align: center;
-        padding-left: 0;
-        font-size: 40px;
-        width: 100%; /* Asegura que el título ocupe todo el ancho del contenedor */
+        font-size: 28px;
     }
     iframe {
-        width: 100%;
-    }
-    .header-content-about .title {
-        font-size: 40px;
+        width: 118%;
     }
     .header-content-about .title {
         font-size: 40px;
     }
     .content-contact {
         padding: 36px;
-        width: 100%;
+        width: 117%;
         text-align: center; /* Asegura que el texto dentro del contenedor esté centrado */
     }
     .content-contact .title {
         text-align: center;
-        margin: 0 auto; /* Centra el título horizontalmente */
+        margin: revert-layer; /* Centra el título horizontalmente */
         font-size: 40px;
+        position: relative;
+        left: 4%;
+
     }
     .header-about .header-content-about h2 {
         width: 100%;
-        left: 58%;
+        left: 70%;
+        font-size: 37px
     }
-    .service{
-        padding: 20px;
+    .service {
+        padding: 45px;
+        width: 123%;
+        height: auto !important; /* Cambiado de 60vh a auto para que se ajuste al contenido */
+    }
+    .content-service {
+        padding: 0px;
+    }
+    .image-area-service img {
+        width: 146%;
+    }
+    .header-about {
+        height: 30vh !important; /* Cambiado de 43vh a auto para que se ajuste al contenido */
+    }
+    .service-content {
+        position: relative;
     }
 }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .expandible {
+            border: 1px solid #ccc;
+            margin: 10px;
+            max-height: 100px; /* Altura máxima inicial */
+            overflow: hidden; /* Oculta el contenido que desborda */
+            transition: max-height 0.3s ease; /* Transición de altura */
+        }
+
+        .expandible.expandido {
+            max-height: 200px; /* Altura máxima expandida */
+        }
+
+        .expandible header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .expandible .contenido {
+            padding: 10px;
+        }
+
+        .expandible .texto-completo {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="expandible" id="miSection">
+        <header>
+            <h2>Sección Expandible</h2>
+            <button id="toggleBtn">Mostrar más</button>
+        </header>
+        <div class="contenido">
+            <p>
+                Este es el contenido de mi sección expandible que está incompleto...
+                <span class="texto-completo">y aquí está el texto completo que se mostrará al hacer clic en el botón
+                    <br>kajskdjaskhdkajhsdkjahsdkjash</br>.</span>
+            </p>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var toggleBtn = document.getElementById('toggleBtn');
+            var textoCompleto = document.querySelector('.texto-completo');
+            var section = document.getElementById('miSection');
+
+            toggleBtn.addEventListener('click', function () {
+                section.classList.toggle('expandido');
+                if (section.classList.contains('expandido')) {
+                    toggleBtn.textContent = 'Mostrar menos';
+                } else {
+                    toggleBtn.textContent = 'Mostrar más';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

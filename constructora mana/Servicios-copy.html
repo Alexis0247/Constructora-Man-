@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style/normalize.css">
-    <link rel="stylesheet" href="Style/Style-service.css">
+    <link rel="stylesheet" href="Style/Style-service copy.css">
     <link rel="stylesheet" href="Style/Boton2.css">
+<link rel="stylesheet" href="Script/Scrip.js">
     <title>Servicio</title>
 </head>
 
@@ -49,14 +50,10 @@
     </div>
     <header class="content header-about">
         <div class="header-content-about">
-            <h2 class="title principal" style="font-size: 60px;">Nuestros servicios</h2>
+            <h2 class="title principal">Nuestros servicios</h2>
         </div>
-    </header>
-    <section class="service">
+    </header><section class="service">
         <div class="content-service">
-            <section class="image-area-service">
-                <img src="img/construcotra-mana-9.jpg" alt="Imagen de ejemplo">
-            </section>
             <section class="service-content">
                 <h3 class="title">Servicio de Construcción</h3>
                 <p id="intro-text-1">
@@ -75,6 +72,9 @@
                 </button>
             </section>
         </div>
+    </section>
+    <section class="image-area-service">
+        <img src="img/construcotra-mana-9.jpg" alt="Imagen de ejemplo">
     </section>     
     <section class="service">
         <div class="content-service">
@@ -95,16 +95,13 @@
                     </svg>
                 </button>
             </section>
-            <section class="image-area-service">
-                <img src="img/construcotra-mana-1.jpg" alt="Imagen de ejemplo">
-            </section>
         </div>
+    </section>
+    <section class="image-area-service">
+        <img src="img/construcotra-mana-1.jpg" alt="Imagen de ejemplo">
     </section>
     <section class="service">
         <div class="content-service">
-            <section class="image-area-service">
-                <img src="img/constructora-mana-26.jpg" alt="Imagen de ejemplo">
-            </section>
             <section class="service-content">
                 <h3 class="title">Servicio de electricidad y gasfiteria</h3>
                 <p id="intro-text-3">En Constructora Maná Ltda, nos especializamos en transformar tus espacios existentes en algo nuevo y emocionante. Desde la remodelación de tu hogar hasta la ampliación de viviendas, nuestro equipo de expertos en electricidad y gasfitería está...
@@ -123,6 +120,9 @@
             </section>
         </div>
     </section>
+    <section class="image-area-service">
+        <img src="img/constructora-mana-26.jpg" alt="Imagen de ejemplo">
+    </section>
     <section class="service">
         <div class="content-service">
             <section class="service-content">
@@ -140,17 +140,13 @@
                     </svg>
                 </button>
             </section>
-            <section class="image-area-service">
-                <img src="img/maquinaria-1.jpg" alt="Imagen de ejemplo">
-            </section>
         </div>
     </section>
-    
+    <section class="image-area-service">
+        <img src="img/maquinaria-1.jpg" alt="Imagen de ejemplo">
+    </section>
     <section class="service">
         <div class="content-service">
-            <section class="image-area-service">
-                <img src="img/constructora-mana-27.jpg" alt="Imagen de ejemplo">
-            </section>
             <section class="service-content">
                 <h3 class="title"> Servicios de Obras Viales y Subsidios Habitacionales</h3>
                 <p id="intro-text-5">En Constructora Maná Ltda, nos especializamos en llevar adelante proyectos que transforman comunidades y mejoran la calidad de vida de las personas. Desde la construcción de infraestructura vial hasta la gestión de subsidios habitacionales, nuestro equipo...
@@ -169,6 +165,9 @@
             </section>
         </div>
     </section>
+    <section class="image-area-service">
+        <img src="img/constructora-mana-27.jpg" alt="Imagen de ejemplo">
+    </section>
     <section class="content content-contact">
         <section class="content content-contact">
             <h2 class="title">Contacto</h2>
@@ -182,43 +181,44 @@
     <a href="https://web.whatsapp.com/" class="whatsapp-btn" target="_blank">
         <img src="img/whatsapp.png" alt="WhatsApp Icon">
     </a>
+ 
     <script>
         function showMore(introId, additionalId, buttonId) {
-            var introText = document.getElementById(introId);
-            var additionalText = document.getElementById(additionalId);
-            var buttonText = document.getElementById(buttonId);
-            
-            if (additionalText.style.display === 'none' || additionalText.style.display === '') {
-                introText.style.display = 'none';
-                additionalText.style.display = 'block';
-                buttonText.textContent = 'Leer menos';
-            } else {
-                introText.style.display = 'block';
-                additionalText.style.display = 'none';
-                buttonText.textContent = 'Leer más';
-            }
+        var introText = document.getElementById(introId);
+        var additionalText = document.getElementById(additionalId);
+        var buttonText = document.getElementById(buttonId);
+        
+        if (additionalText.style.display === 'none' || additionalText.style.display === '') {
+            introText.style.display = 'none';
+            additionalText.style.display = 'block';
+            buttonText.textContent = 'Leer menos';
+        } else {
+            introText.style.display = 'block';
+            additionalText.style.display = 'none';
+            buttonText.textContent = 'Leer más';
         }
-    
-        // Agregar eventos tanto para clics como para toques táctiles
-        document.addEventListener('click', function(event) {
-            if (event.target.matches('.cta')) {
-                var buttonId = event.target.id;
-                var introId = buttonId.replace('button-text-', 'intro-text-1');
-                var additionalId = buttonId.replace('button-text-1', 'additional-text-1');
-                showMore(introId, additionalId, buttonId);
-            }
-        });
-    
-        document.addEventListener('touchstart', function(event) {
-            if (event.target.matches('.cta')) {
-                var buttonId = event.target.id;
-                var introId = buttonId.replace('button-text-1', 'intro-text-1');
-                var additionalId = buttonId.replace('button-text-1', 'additional-text-1');
-                showMore(introId, additionalId, buttonId);
-            }
-        });
-    </script>
-    
+    }
+
+    // Agregar eventos tanto para clics como para toques táctiles
+    document.addEventListener('click', function(event) {
+        if (event.target.matches('.cta')) {
+            var buttonId = event.target.id;
+            var introId = buttonId.replace('button-text-', 'intro-text-1');
+            var additionalId = buttonId.replace('button-text-1', 'additional-text-1');
+            showMore(introId, additionalId, buttonId);
+        }
+    });
+
+    document.addEventListener('touchstart', function(event) {
+        if (event.target.matches('.cta')) {
+            var buttonId = event.target.id;
+            var introId = buttonId.replace('button-text-1', 'intro-text-1');
+            var additionalId = buttonId.replace('button-text-1', 'additional-text-1');
+            showMore(introId, additionalId, buttonId);
+        }
+    });
+</script>
+
 </body>
 
 </html>
