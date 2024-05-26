@@ -241,7 +241,7 @@ h3 {
 .content-about-more {
     padding: 100px 200px;
     background: #090C08;
-    height: 100vh !important;
+    height: auto !important;
 }
 
 .content-about-more p {

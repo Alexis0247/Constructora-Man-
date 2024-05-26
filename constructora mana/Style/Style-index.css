@@ -39,6 +39,12 @@ body {
     text-align: center;
     font-family: sans-serif;
     background-color: #DED6D1;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+.header, .content-service, .how-we-work, .content-about {
+    width: 100vw; /* Asegura que ocupen todo el ancho de la pantalla */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
 h3 {
@@ -66,8 +72,8 @@ h3 {
 
 .navbar {
     display: flex;
-    margin-right: 10px;
-    margin-top: 7px;
+    position: relative;
+    right: 4%
 
 }
 .redes-Sociales{
@@ -75,9 +81,8 @@ h3 {
 }
 
 .logo {
-    margin-left: 30px;
-    padding: 40px;
-    width: 10%;
+    position: relative;
+    left: 4%;
 }
 
 .logo img {
@@ -102,16 +107,11 @@ h3 {
 .dropbtn {
     background-color: #090C08;
     color: white;
-    padding: 13px 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    margin-right: 45px;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
+    width: 80px;
+    height: 75px;
 }
 
 .dropdown-content {
@@ -278,6 +278,9 @@ p {
     line-height: 2;
 
 }
+.header-content p{
+    font-size: 35px;
+}
 
 
 
@@ -290,13 +293,9 @@ p {
 
 
 .content-service {
-    padding: 130px;
+    position: relative;
     background: #090C08;
-    height: 100vb !important;
-}
-
-.content-service {
-    display: flex;
+    height: auto;
     align-items: center;
     /* Centra el contenido verticalmente */
 }
@@ -312,81 +311,47 @@ p {
     text-align: left;
 }
 
-.carousel-img {
-    width: 100%;
-    /* Ancho fijo */
-    height: 600px;
-    /* Alto fijo */
-    object-fit: fill;
-    /* Evita que la imagen se ajuste o distorsione */
-    opacity: 0.5;
-    /* Valor de opacidad (0 es completamente transparente, 1 es completamente opaco) */
-    max-width: none;
-}
-
-.content-service {
-    padding: 50px;
-    background: #090C08;
-}
-
 .carousel {
     position: relative;
     width: 70%;
-    /* Cambia el ancho del carousel según tu preferencia */
-    margin: 0 auto;
-    /* Centra el carousel horizontalmente */
-    overflow: hidden;
+    padding-bottom: 70px;
 }
 
 .carousel-inner {
-    display: flex;
     transition: transform 0.5s ease;
+    height: 100%;
 }
 
 .carousel-item {
-    width: 100;
+    width: 100%;
     transition: opacity 0.5s ease-in-out;
     /* Ajusta la velocidad de transición */
 }
 
 .carousel-img {
     width: 100%;
-    height: 900px;
     object-fit: cover;
+    opacity: 0.5;
+    height: 600px;
     /* Ajusta la imagen para llenar el contenedor */
 }
 
 .carousel-caption {
     position: absolute;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.);
     color: #fff;
-    padding: 20px;
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    /* Alinea los elementos en el extremo inferior */
-    align-items: flex-start;
-    /* Alinea los elementos a la izquierda */
-    box-sizing: border-box;
     text-align: left;
     /* Alinea el texto a la izquierda */
 }
-
-.carousel-caption h1,
-.carousel-caption p,
-.carousel-caption {
-    margin: 0;
-}
-
-.carousel-caption h1 {
-    font-size: 50px
-}
-
 .content-carousel {
-    margin: 30px;
+    position: relative;
+    bottom: 110px;
+    left: 50px;
+}
+.carousel-caption h1 {
+    font-size: 40px;
 }
 
 
@@ -398,7 +363,7 @@ p {
 .prev,
 .next {
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     font-size: 30px;
     cursor: pointer;
@@ -609,43 +574,40 @@ p {
 /***************************************************************/
 
 /* MEDIA QUERIES */
+/* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
     p {
-        padding: 10px;
         text-align: center;
     }
     .logo img {
         width: 80px;
     }
-    .call-us {
-        display: none;
-    }
-    .logo {
-        margin-left: 0;
-        padding: 30px;
+    .navbar a {
+        padding: 23px 10px;
     }
     .title {
         text-align: center;
         padding-left: 0px;
-        font-size: 40px;
+        font-size: 35px;
+    }
+    .content-service .title{
+        position: absolute;
+        top: 5%;
     }
     .header {
         height: 100vh !important; /* Ajusta la altura en móviles si es necesario */
         background-size: cover;
-        padding: 20PX;
+        padding: 20px;
+        width: auto;
     }
     .header-content {
-        left: 55%; /* Centra horizontalmente */
+        left: 50%; /* Centra horizontalmente */
+    }
+    .header-content p {
+        font-size: 23px;
     }
     .btn-home .btn-btn {
-        width: 40%;
-    }
-    .content-service {
-        padding: 50px;
-        width: 100%;
-    }
-    .how-we-work {
-        width: 100%;
+        width: 50%;
     }
     .content-how-we-work {
         flex-direction: column;
@@ -655,12 +617,15 @@ p {
         padding: 0 20px;
     }
     .content-contact .title {
-        font-size: 40px;
+        font-size: 30px;
     }
     .content-service, .content-about, .content-contact, .how-we-work {
         padding: 20px;
-        width: 100%;
     }
+    .content-service{
+        height: 70vh;
+    }
+
     .content-about {
         height: 100vh !important;
     }
@@ -671,13 +636,22 @@ p {
     .carousel {
         width: 100%;
         margin: 0;
+        padding-bottom: 0px;
     }
     .carousel-caption {
         width: 100%;
-        margin: 0;
+        text-align: left; /* Centra el texto del caption */
+        position: static; /* Quita la posición absoluta */
+        padding: 10px 0; /* Añade espacio alrededor del caption */
+        position: relative;
+        top: 40px;
     }
     .content-carousel p {
         font-size: 10px;
+    }
+    .content-carousel {
+        bottom: 40px;
+        left: 25px;
     }
     .whatsapp-btn {
         right: 20px;
@@ -685,10 +659,16 @@ p {
     iframe {
         width: 100%;
     }
-    .content-carousel {
-        margin: 5px;
+    .carousel-img {
+        object-fit: cover;
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: 200px; /* Mantiene la proporción de la imagen */
     }
     .carousel-caption h1 {
-        font-size: 45px;
+        font-size: 30px;
+    }
+    .prev,
+    .next {
+    top: 30%;
     }
 }
