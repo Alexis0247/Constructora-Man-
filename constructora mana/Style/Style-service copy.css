@@ -1,7 +1,17 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
     vertical-align: baseline;
+    box-sizing: border-box; /* Agrega box-sizing aquí */
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #DED6D1;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 
 .content {
@@ -10,26 +20,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    width: 100vw; /* Asegura que ocupen todo el ancho de la pantalla */
 }
+
 p {
     margin-bottom: 40px;
     font-size: 20px;
     color: white;
     line-height: 2;
-
 }
 
-/**************************************************************/
-/*NAVBAR*/
-body {
-    text-align: center;
-    font-family: sans-serif;
-    background-color: #DED6D1;
+.title {
+    margin-bottom: 40px;
+    font-size: 45px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
 }
 
-h3 {
-    font-size: 20px;
+.header, .content-service, .how-we-work, .content-about {
+    width: 100vw; /* Asegura que ocupen todo el ancho de la pantalla */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
 .header {
@@ -48,23 +60,20 @@ h3 {
     width: 100%;
     z-index: 100;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
-    /* Agrega una sombra */
 }
 
 .navbar {
     display: flex;
     margin-right: 10px;
     margin-top: 7px;
-
 }
 
 .logo {
-    margin-left: 30px;
-    padding: 40px;
-    width: 10%;
-
+    padding: 4px;
+    position: relative;
 }
-.logo img{
+
+.logo img {
     width: 150px;
     height: auto;
 }
@@ -86,11 +95,11 @@ h3 {
 .dropbtn {
     background-color: #090C08;
     color: white;
-    padding: 13px 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    margin-right: 45px;
+    width: 80px;
+    height: 75px;
 }
 
 .dropdown {
@@ -107,9 +116,8 @@ h3 {
     z-index: 1;
     left: auto;
     right: 0;
-    /* Ajusta el menú para que se abra hacia la derecha */
     opacity: 0;
-    max-height: none; /* Cambiado a 'none' */
+    max-height: none;
     transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
@@ -133,6 +141,7 @@ h3 {
     opacity: 1;
     display: block;
 }
+
 .dropdown:hover .dropbtn {
     background-color: #09A603;
 }
@@ -140,20 +149,15 @@ h3 {
 .call-us {
     display: flex;
     justify-content: center;
-    /* Centra horizontalmente */
     align-items: center;
-    /* Centra verticalmente */
-    margin-right: 100PX;
+    margin-right: 100px;
 }
 
 .call-text {
     margin-right: 10px;
-    /* Espacio entre el texto y el número */
     color: #DED6D1;
     padding-right: 10px;
-    /* Espacio adicional a la derecha del texto */
     border-right: 3px solid #DED6D1;
-    /* Borde derecho */
     font-size: 25px;
 }
 
@@ -161,9 +165,6 @@ h3 {
     font-size: 25px;
     color: #DED6D1;
 }
-
-
-
 
 .card {
     width: fit-content;
@@ -177,30 +178,31 @@ h3 {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
 }
 
-/* instagram*/
+/* instagram */
 .containerOne:hover {
     background-color: #d62976;
     transition-duration: .3s;
 }
 
-/* facebook*/
+/* facebook */
 .containerThree:hover {
     background-color: #0072b1;
     transition-duration: .3s;
 }
 
 .containerYouTube:hover {
-    background-color: #CC0000; /* Cambia el color de fondo al pasar el mouse */
+    background-color: #CC0000;
 }
+
 .socialContainer:active {
     transform: scale(0.9);
     transition-duration: .3s;
 }
 
 .socialSvg {
-    width: 30px; /* Ajusta el tamaño del ícono */
-    height: auto; /* Permite que la altura se ajuste automáticamente */
-    fill: white; /* Color del ícono */
+    width: 30px;
+    height: auto;
+    fill: white;
 }
 
 .socialSvg path {
@@ -216,19 +218,12 @@ h3 {
         transform: translateY(-50px);
         opacity: 0;
     }
-
     100% {
         transform: translateY(0);
         opacity: 1;
     }
 }
 
-
-
-/*FIN DE NAVBAR*/
-/**************************************************************************/
-/*********************************************************************/
-/*HEADER*/
 .header-about .header-content-about h2 {
     position: absolute;
     color: #090C08;
@@ -236,51 +231,41 @@ h3 {
     text-align: center;
     top: 20%;
     transform: translate(-50%, -50%);
-    /* Centra el contenido */
-    white-space: nowrap; /* Evita el salto de línea */
+    white-space: nowrap;
 }
+
 .content {
-    height: 80vh !important;
+    height: 27vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
-/*FIN DE HEADER*/
-/*********************************************************************/
-/********************************************************************/
-/*CONTENIDO DE SERVICIO*/
 
 .service {
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     background: #090C08;
     height: auto !important;
     align-items: center;
     align-content: center;
 }
 
-
-
 .service-content {
     padding: 50px;
-    margin: 0%;
+    margin: 0;
 }
 
-.image-area-service img{
+.image-area-service img {
     width: 100%;
     height: 70%;
     object-fit: cover;
 }
 
-
 .content-service {
     padding: 130px;
     background: #090C08;
 }
-
-
 
 .title {
     margin-bottom: 40px;
@@ -290,19 +275,10 @@ h3 {
     color: white;
 }
 
-
-/*FIN DE CONTENIDO DE SERVICIO*/
-/************************************************************************/
-
-
-/**********************************************************************/
-/* contactenos */
-
-
 .content-contact {
     padding: 100px;
     background: #DED6D1;
-    height: 75vb !important;
+    height: 75vh !important;
 }
 
 .content-contact p {
@@ -314,21 +290,15 @@ h3 {
     color: #090C08;
 }
 
-
-/*FIN DE CONTACTOS*/
-/*******************************************************************/
-
-/***************************************************************************/
-/*WHATSAPP BOTON*/
-
 @keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
+
 @keyframes slideIn {
-    from { right: -100px; } /* Empieza fuera de la pantalla */
-    to { right: 70px; } /* Termina en la posición deseada */
+    from { right: -100px; }
+    to { right: 70px; }
 }
 
 .whatsapp-btn {
@@ -336,7 +306,7 @@ h3 {
     bottom: 50px;
     right: 70px;
     transition: transform 0.5s ease-in-out;
-    animation: slideIn 1s forwards; /* Animación de entrada */
+    animation: slideIn 1s forwards;
 }
 
 .whatsapp-btn img {
@@ -345,12 +315,9 @@ h3 {
 }
 
 .whatsapp-btn:hover {
-    transform: scale(1.2); /* Cambia el tamaño al pasar el mouse sobre él */
+    transform: scale(1.2);
 }
-/*WHATSAPP BOTON*/
-/***************************************************************************/
 
-/* Media queries para pantallas pequeñas */
 @media screen and (max-width: 768px) {
     p {
         padding: 10px;
@@ -359,57 +326,55 @@ h3 {
     .logo img {
         width: 80px;
     }
-    .logo {
-        margin-left: 0;
-        padding: 30px;
-    }
     .title {
         font-size: 28px;
     }
     iframe {
-        width: 118%;
+        width: 100%;
     }
     .header-content-about .title {
-        font-size: 40px;
+        font-size: 25px;
     }
     .content-contact {
         padding: 36px;
-        width: 117%;
-        text-align: center; /* Asegura que el texto dentro del contenedor esté centrado */
+        width: 100%;
+        text-align: center;
     }
     .content-contact .title {
         text-align: center;
-        margin: revert-layer; /* Centra el título horizontalmente */
-        font-size: 40px;
-        position: relative;
-        left: 4%;
-
+        font-size: 30px;
     }
-    .header-about .header-content-about h2 {
-        width: 100%;
-        left: 70%;
-        font-size: 37px
+    .header-content {
+        width: 90%;
+        padding: 10px;
+        left: 50%;
     }
-    .service {
-        padding: 45px;
-        width: 123%;
-        height: auto !important; /* Cambiado de 60vh a auto para que se ajuste al contenido */
+    .header-content p {
+        font-size: 20px;
     }
-    .content-service {
-        padding: 0px;
+    .carousel-img {
+        height: 200px;
     }
-    .image-area-service img {
-        width: 146%;
+    .carousel-caption h1 {
+        font-size: 30px;
     }
-    .header-about {
-        height: 30vh !important; /* Cambiado de 43vh a auto para que se ajuste al contenido */
+    .prev,
+    .next {
+        top: 30%;
     }
-    .service-content {
-        position: relative;
+    .content-service,
+    .content-about,
+    .content-contact,
+    .how-we-work {
+        padding: 20px;
     }
-    .dropdown {
-        position: relative;
-        display: inline-block;
-        top: 13px;
+    .header {
+        height: 100vh !important;
+        background-size: cover;
+        padding: 20px;
+        width: auto;
+    }
+    .navbar a{
+        padding: 23px 10px;
     }
 }
