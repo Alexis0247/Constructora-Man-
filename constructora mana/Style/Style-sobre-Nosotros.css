@@ -1,9 +1,23 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    border: 0%;
+    margin: 0;
+    padding: 0;
+    border: 0;
     font-size: 100%;
     vertical-align: baseline;
+    box-sizing: border-box; /* Asegura que padding y borde se incluyan en el ancho total */
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #DED6D1;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+.header, .content-service, .how-we-work, .content-about {
+    width: 100%; /* Asegura que ocupen todo el ancho de la pantalla */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
 .content {
@@ -12,7 +26,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 p {
@@ -20,7 +33,6 @@ p {
     font-size: 18px;
     color: white;
     line-height: 2;
-
 }
 
 .title {
@@ -29,20 +41,8 @@ p {
     font-weight: 600;
     text-transform: uppercase;
     color: white;
-}
-
-
-
-/**************************************************************/
-/*NAVBAR*/
-body {
-    text-align: center;
-    font-family: sans-serif;
-    background-color: #DED6D1;
-}
-
-h3 {
-    font-size: 20px;
+    width: 100%; /* Asegura que el título ocupe todo el ancho del contenedor */
+    text-align: center; /* Centra el título */
 }
 
 .header {
@@ -61,23 +61,21 @@ h3 {
     width: 100%;
     z-index: 100;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
-    /* Agrega una sombra */
 }
 
 .navbar {
     display: flex;
-    margin-right: 10px;
-    margin-top: 7px;
-
+    position: relative;
+    right: 4%;
 }
-.redes-Sociales{
+
+.redes-Sociales {
     display: flex;
 }
 
 .logo {
-    margin-left: 30px;
-    padding: 40px;
-    width: 10%;
+    position: relative;
+    left: 4%;
 }
 
 .logo img {
@@ -102,11 +100,11 @@ h3 {
 .dropbtn {
     background-color: #090C08;
     color: white;
-    padding: 13px 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    margin-right: 45px;
+    width: 80px;
+    height: 75px;
 }
 
 .dropdown {
@@ -123,10 +121,8 @@ h3 {
     z-index: 1;
     left: auto;
     right: 0;
-    /* Ajusta el menú para que se abra hacia la derecha */
     opacity: 0;
     max-height: none;
-    /* Cambiado a 'none' */
     transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
@@ -155,9 +151,6 @@ h3 {
     background-color: #09A603;
 }
 
-
-
-
 .card {
     width: fit-content;
     height: fit-content;
@@ -170,30 +163,31 @@ h3 {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
 }
 
-/* instagram*/
+/* instagram */
 .containerOne:hover {
     background-color: #d62976;
     transition-duration: .3s;
 }
 
-/* facebook*/
+/* facebook */
 .containerThree:hover {
     background-color: #0072b1;
     transition-duration: .3s;
 }
 
 .containerYouTube:hover {
-    background-color: #CC0000; /* Cambia el color de fondo al pasar el mouse */
+    background-color: #CC0000;
 }
+
 .socialContainer:active {
     transform: scale(0.9);
     transition-duration: .3s;
 }
 
 .socialSvg {
-    width: 30px; /* Ajusta el tamaño del ícono */
-    height: auto; /* Permite que la altura se ajuste automáticamente */
-    fill: white; /* Color del ícono */
+    width: 30px;
+    height: auto;
+    fill: white;
 }
 
 .socialSvg path {
@@ -209,25 +203,13 @@ h3 {
         transform: translateY(-50px);
         opacity: 0;
     }
-
     100% {
         transform: translateY(0);
         opacity: 1;
     }
 }
 
-
 /* Sección "Sobre Nosotros" */
-.title {
-    margin-bottom: 40px;
-    font-size: 60px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: white;
-    width: 100%; /* Asegura que el título ocupe todo el ancho del contenedor */
-    text-align: center; /* Centra el título */
-}
-
 .header-about .header-content-about h2 {
     position: absolute;
     color: #090C08;
@@ -235,7 +217,7 @@ h3 {
     text-align: center;
     width: 40%;
     top: 30%;
-    transform: translate(-50%, -50%); /* Centra el contenido */
+    transform: translate(-50%, -50%);
 }
 
 .content-about-more {
@@ -265,8 +247,8 @@ h3 {
 .content-contact {
     padding: 100px;
     background: #DED6D1;
-    height: 75vh !important;
-    text-align: center; /* Asegura que el texto dentro del contenedor esté centrado */
+    height: 100vh !important;
+    text-align: center;
 }
 
 .content-contact p {
@@ -280,8 +262,8 @@ h3 {
     font-size: 60px;
     font-weight: 600;
     text-transform: uppercase;
-    width: 100%; /* Asegura que el título ocupe todo el ancho del contenedor */
-    text-align: center; /* Centra el título */
+    width: 100%;
+    text-align: center;
 }
 
 /* Botón de WhatsApp */
@@ -292,8 +274,8 @@ h3 {
 }
 
 @keyframes slideIn {
-    from { right: -100px; } /* Empieza fuera de la pantalla */
-    to { right: 70px; } /* Termina en la posición deseada */
+    from { right: -100px; }
+    to { right: 70px; }
 }
 
 .whatsapp-btn {
@@ -301,7 +283,7 @@ h3 {
     bottom: 50px;
     right: 70px;
     transition: transform 0.5s ease-in-out;
-    animation: slideIn 1s forwards; /* Animación de entrada */
+    animation: slideIn 1s forwards;
 }
 
 .whatsapp-btn img {
@@ -310,7 +292,7 @@ h3 {
 }
 
 .whatsapp-btn:hover {
-    transform: scale(1.2); /* Cambia el tamaño al pasar el mouse sobre él */
+    transform: scale(1.2);
 }
 
 /* Media Queries */
@@ -323,17 +305,14 @@ h3 {
     .logo img {
         width: 80px;
     }
-
-    .logo {
-        margin-left: 0;
-        padding: 30px;
+    .navbar a {
+        padding: 23px 10px;
     }
 
     .title {
-        font-size: 40px;
-        width: 100%; /* Asegura que el título ocupe todo el ancho del contenedor */
         text-align: center;
         padding-left: 0;
+        font-size: 35px;
     }
 
     iframe {
@@ -355,23 +334,23 @@ h3 {
     }
 
     .header-content-about .title {
-        font-size: 40px;
+        font-size: 25px;
     }
 
     .content-contact {
-        padding: 36px;
-        width: 100%;
-        text-align: center; /* Asegura que el texto dentro del contenedor esté centrado */
+        padding: 0px;
     }
 
     .content-contact .title {
-        text-align: center;
-        margin: 0 auto; /* Centra el título horizontalmente */
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .header-about .header-content-about h2 {
         width: 100%;
-        left: 58%;
+        left: 50%;
+        top: 22%;
+    }
+    .content{
+        height: 30vh;
     }
 }
