@@ -407,4 +407,9 @@ h3 {
     .service-content {
         position: relative;
     }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        top: 13px;
+    }
 }
