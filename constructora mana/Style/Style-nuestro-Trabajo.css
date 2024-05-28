@@ -101,11 +101,6 @@ p {
     height: 75px;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -485,5 +480,17 @@ p {
 @media screen and (max-width: 480px) {
     .image-container {
         width: calc(50% - 20px);
+    }
+    @keyframes slideIn {
+        from {
+            right: -100px;
+        }
+    
+        /* Empieza fuera de la pantalla */
+        to {
+            right: 30px;
+        }
+    
+        /* Termina en la posición deseada */
     }
 }

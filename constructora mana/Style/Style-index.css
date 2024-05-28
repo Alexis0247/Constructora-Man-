@@ -493,7 +493,7 @@ p {
 }
 
 .content-about {
-    padding: 120px;
+    padding: 100px;
     background: #DED6D1;
     height: 70vb !important;
 }
@@ -669,5 +669,17 @@ p {
     .prev,
     .next {
     top: 30%;
+    }
+    @keyframes slideIn {
+        from {
+            right: -100px;
+        }
+    
+        /* Empieza fuera de la pantalla */
+        to {
+            right: 30px;
+        }
+    
+        /* Termina en la posición deseada */
     }
 }
