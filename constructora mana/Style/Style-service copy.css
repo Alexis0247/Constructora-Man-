@@ -252,7 +252,7 @@ p {
 }
 
 .service-content {
-    padding: 50px;
+    padding: 20px;
     margin: 0;
 }
 
@@ -321,7 +321,7 @@ p {
 @media screen and (max-width: 768px) {
     p {
         padding: 10px;
-        text-align: center;
+        text-align: justify;
     }
     .logo img {
         width: 80px;
@@ -376,5 +376,8 @@ p {
     }
     .navbar a{
         padding: 23px 10px;
+    }
+    .image-area-service{
+        background-color: #090C08;
     }
 }
