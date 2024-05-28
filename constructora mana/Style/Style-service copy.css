@@ -380,4 +380,19 @@ p {
     .image-area-service{
         background-color: #090C08;
     }
+<<<<<<< Updated upstream
+=======
+    @keyframes slideIn {
+        from {
+            right: -100px;
+        }
+    
+        /* Empieza fuera de la pantalla */
+        to {
+            right: 30px;
+        }
+    
+        /* Termina en la posición deseada */
+    }
+>>>>>>> Stashed changes
 }
