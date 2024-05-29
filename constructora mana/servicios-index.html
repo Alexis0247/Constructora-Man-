@@ -14,7 +14,7 @@
             
             if (isMobile) {
                 // Si es un dispositivo móvil, carga el HTML específico para móviles
-                fetch('Servicios-copy.html')
+                fetch('servicio-responsive.html')
                     .then(response => response.text())
                     .then(data => {
                         contentDiv.innerHTML = data;
@@ -31,5 +31,22 @@
             }
         }
     </script>
+        <script>
+            function showMore(introId, additionalId, buttonId) {
+                var introText = document.getElementById(introId);
+                var additionalText = document.getElementById(additionalId);
+                var buttonText = document.getElementById(buttonId);
+                
+                if (additionalText.style.display === 'none' || additionalText.style.display === '') {
+                    introText.style.display = 'none';
+                    additionalText.style.display = 'block';
+                    buttonText.textContent = 'Leer menos';
+                } else {
+                    introText.style.display = 'block';
+                    additionalText.style.display = 'none';
+                    buttonText.textContent = 'Leer más';
+                }
+            }
+        </script>
 </body>
 </html>

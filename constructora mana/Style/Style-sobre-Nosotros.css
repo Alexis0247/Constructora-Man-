@@ -127,7 +127,6 @@ p {
 .dropdown-content a:visited,
 .dropdown-content a:focus {
     color: black;
-    padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
@@ -295,7 +294,7 @@ p {
 @media screen and (max-width: 768px) {
     p {
         padding: 10px;
-        text-align: center;
+        text-align: justify;
     }
 
     .logo img {
@@ -326,7 +325,7 @@ p {
 
     .content-about-more p {
         padding: 10px;
-        text-align: center;
+        text-align: justify;
     }
 
     .header-content-about .title {
