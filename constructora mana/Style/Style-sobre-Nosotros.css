@@ -33,6 +33,7 @@ p {
     font-size: 18px;
     color: white;
     line-height: 2;
+    text-align: justify;
 }
 
 .title {
@@ -105,11 +106,6 @@ p {
     cursor: pointer;
     width: 80px;
     height: 75px;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
 }
 
 .dropdown-content {
@@ -352,5 +348,17 @@ p {
     }
     .content{
         height: 30vh;
+    }
+    @keyframes slideIn {
+        from {
+            right: -100px;
+        }
+    
+        /* Empieza fuera de la pantalla */
+        to {
+            right: 30px;
+        }
+    
+        /* Termina en la posición deseada */
     }
 }

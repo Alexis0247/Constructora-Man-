@@ -34,7 +34,11 @@ body {
 h3 {
     font-size: 20px;
 }
-
+.header, .content-service, .how-we-work, .content-about {
+    width: 100vw; /* Asegura que ocupen todo el ancho de la pantalla */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
 .header {
     display: flex;
     justify-content: center;
@@ -51,18 +55,23 @@ h3 {
     width: 100%;
     z-index: 100;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
+    /* Agrega una sombra */
 }
 
 .navbar {
     display: flex;
-    margin-right: 10px;
-    margin-top: 7px;
+    position: relative;
+    right: 4%
+
+}
+
+.redes-Sociales{
+    display: flex;
 }
 
 .logo {
-    margin-left: 30px;
-    padding: 40px;
-    width: 10%;
+    position: relative;
+    left: 4%;
 }
 
 .logo img {
@@ -84,20 +93,14 @@ h3 {
     color: #09A603;
 }
 
-/* Botón desplegable */
 .dropbtn {
     background-color: #090C08;
     color: white;
-    padding: 13px 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    margin-right: 45px;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
+    width: 80px;
+    height: 75px;
 }
 
 .dropdown-content {
@@ -107,20 +110,27 @@ h3 {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    left: auto;
     right: 0;
+    /* Ajusta el menú para que se abra hacia la derecha */
     opacity: 0;
     max-height: none;
+    /* Cambiado a 'none' */
     transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
-.dropdown-content a {
+.dropdown-content a,
+.dropdown-content a:hover,
+.dropdown-content a:visited,
+.dropdown-content a:focus {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover,
+.dropdown-content a:focus {
     background-color: #09A603;
     color: white;
 }
@@ -134,26 +144,7 @@ h3 {
     background-color: #09A603;
 }
 
-/* Contacto */
-.call-us {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 100px;
-}
 
-.call-text {
-    margin-right: 10px;
-    color: #DED6D1;
-    padding-right: 10px;
-    border-right: 3px solid #DED6D1;
-    font-size: 25px;
-}
-
-.phone-number {
-    font-size: 25px;
-    color: #DED6D1;
-}
 
 /* Tarjetas */
 .card {
@@ -363,5 +354,17 @@ h3 {
     }
     .service{
         padding: 20px;
+    }
+    @keyframes slideIn {
+        from {
+            right: -100px;
+        }
+    
+        /* Empieza fuera de la pantalla */
+        to {
+            right: 30px;
+        }
+    
+        /* Termina en la posición deseada */
     }
 }
