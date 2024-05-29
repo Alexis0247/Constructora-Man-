@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style/normalize.css">
     <link rel="stylesheet" href="Style/Style-service copy.css">
     <link rel="stylesheet" href="Style/Boton2.css">
-    <title>Servicio</title>
+    <title>Document</title>
 </head>
-
 <body>
     <div class="head">
         <div class="logo">
@@ -74,7 +72,7 @@
     </section>
     <section class="image-area-service">
         <img src="img/construcotra-mana-9.jpg" alt="Imagen de ejemplo">
-    </section>     
+    </section>
     <section class="service">
         <div class="content-service">
             <section class="service-content">
@@ -147,27 +145,22 @@
     <section class="service">
         <div class="content-service">
             <section class="service-content">
-                <h3 class="title"> Servicios de Obras Viales y Subsidios Habitacionales</h3>
-                <p id="intro-text-5">En Constructora Maná Ltda, nos especializamos en llevar adelante proyectos que transforman comunidades y mejoran la calidad de vida de las personas. Desde la construcción de infraestructura vial hasta la gestión de subsidios habitacionales, nuestro equipo...
-                </p>
+                <h3 class="title">Servicios de Obras Viales y Subsidios Habitacionales</h3>
+                <p id="intro-text-5">En Constructora Maná Ltda, nos especializamos en llevar adelante proyectos que transforman comunidades y mejoran la calidad de vida de las personas. Desde la construcción de infraestructura vial hasta la gestión de subsidios habitacionales, nuestro equipo...</p>
                 <p id="additional-text-5" style="display: none;">
                     En Constructora Maná Ltda, nos especializamos en llevar adelante proyectos que transforman comunidades y mejoran la calidad de vida de las personas. Desde la construcción de infraestructura vial hasta la gestión de subsidios habitacionales, nuestro equipo dedicado está comprometido a hacer realidad tus sueños de un entorno más seguro y próspero. ¿Qué nos diferencia? No solo nos enfocamos en cumplir con los estándares más altos de calidad y seguridad, sino que también nos esforzamos por aprovechar al máximo los recursos disponibles y maximizar el impacto positivo en la comunidad. Confía en nosotros para liderar tus proyectos viales y de vivienda con profesionalismo, dedicación y una verdadera pasión por el cambio positivo. ¡Contáctanos hoy mismo y comienza a construir un futuro mejor para todos!</p>
-                <button onclick="showMore('intro-text-5', 'additional-text-5', 'button-text-5')" class="cta">
-                    <span class="hover-underline-animation" id="button-text"> Leer más </span>
-                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
-                        viewBox="0 0 46 16" fill="#09A603">
-                        <path id="Path_10" data-name="Path 10"
-                            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                            transform="translate(30)"></path>
-                    </svg>
-                </button>
+                    <button onclick="showMore('intro-text-5', 'additional-text-5', 'button-text-5')" class="cta">
+                        <span class="hover-underline-animation" id="button-text-5">Leer más</span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16" fill="#09A603">
+                            <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                    </button>
             </section>
         </div>
     </section>
     <section class="image-area-service">
         <img src="img/constructora-mana-27.jpg" alt="Imagen de ejemplo">
     </section>
-    
     <section class="content content-contact">
         <h2 class="title">¿Cómo encontrarnos?</h2>
         <figure class="mapa">
@@ -180,46 +173,7 @@
     </section>
     <a href="https://wa.me/+56999299503" class="whatsapp-btn" target="_blank">
         <img src="img/whatsapp.png" alt="WhatsApp Icon">
-
     </a>
-
-    <script>
-        function showMore(introId, additionalId, buttonId) {
-        var introText = document.getElementById(introId);
-        var additionalText = document.getElementById(additionalId);
-        var buttonText = document.getElementById(buttonId);
-        
-        if (additionalText.style.display === 'none' || additionalText.style.display === '') {
-            introText.style.display = 'none';
-            additionalText.style.display = 'block';
-            buttonText.textContent = 'Leer menos';
-        } else {
-            introText.style.display = 'block';
-            additionalText.style.display = 'none';
-            buttonText.textContent = 'Leer más';
-        }
-    }
-
-    // Agregar eventos tanto para clics como para toques táctiles
-    document.addEventListener('click', function(event) {
-        if (event.target.matches('.cta')) {
-            var buttonId = event.target.id;
-            var introId = buttonId.replace('button-text-', 'intro-text-1');
-            var additionalId = buttonId.replace('button-text-1', 'additional-text-1');
-            showMore(introId, additionalId, buttonId);
-        }
-    });
-
-    document.addEventListener('touchstart', function(event) {
-        if (event.target.matches('.cta')) {
-            var buttonId = event.target.id;
-            var introId = buttonId.replace('button-text-1', 'intro-text-1');
-            var additionalId = buttonId.replace('button-text-1', 'additional-text-1');
-            showMore(introId, additionalId, buttonId);
-        }
-    });
-</script>
-
+    
 </body>
-
 </html>

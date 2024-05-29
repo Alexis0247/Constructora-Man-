@@ -124,7 +124,6 @@ h3 {
 .dropdown-content a:visited,
 .dropdown-content a:focus {
     color: black;
-    padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
