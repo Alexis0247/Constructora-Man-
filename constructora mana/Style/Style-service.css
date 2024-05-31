@@ -29,8 +29,8 @@ body {
     text-align: center;
     font-family: sans-serif;
     background-color: #DED6D1;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
-
 h3 {
     font-size: 20px;
 }
@@ -258,7 +258,7 @@ h3 {
 
 .title {
     margin-bottom: 40px;
-    font-size: 45px;
+    font-size: 60px;
     font-weight: 600;
     text-transform: uppercase;
     color: white;
@@ -268,7 +268,7 @@ h3 {
 .content-contact {
     padding: 100px;
     background: #DED6D1;
-    height: 75vh !important;
+    height: 60vh !important;
 }
 
 .content-contact p {
@@ -278,6 +278,36 @@ h3 {
 
 .content-contact .title {
     color: #090C08;
+}
+
+footer {
+    position: relative;
+    padding: 20px;
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color del texto */
+}
+.footer{
+    width: 82%;
+}
+
+.new-footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px; /* Tamaño de la fuente */
+}
+
+.left-content {
+    margin-left: 20px; /* Margen izquierdo para separar del borde */
+}
+
+.right-content {
+    margin-right: 20px; /* Margen derecho para separar del borde */
+}
+.footer-line {
+    border: none;
+    border-top: 1px solid #090C08; /* Color de la raya */
+    margin: 67px 0; /* Espaciado arriba y abajo de la línea */
 }
 
 /* Botón de WhatsApp */
@@ -307,63 +337,4 @@ h3 {
 
 .whatsapp-btn:hover {
     transform: scale(1.2);
-}
-
-/* Media queries para pantallas pequeñas */
-@media screen and (max-width: 768px) {
-    p {
-        padding: 10px;
-        text-align: center;
-    }
-    .logo img {
-        width: 80px;
-    }
-    .logo {
-        margin-left: 0;
-        padding: 30px;
-    }
-    .title {
-        text-align: center;
-        padding-left: 0;
-        font-size: 40px;
-        width: 100%; /* Asegura que el título ocupe todo el ancho del contenedor */
-    }
-    iframe {
-        width: 100%;
-    }
-    .header-content-about .title {
-        font-size: 40px;
-    }
-    .header-content-about .title {
-        font-size: 40px;
-    }
-    .content-contact {
-        padding: 36px;
-        width: 100%;
-        text-align: center; /* Asegura que el texto dentro del contenedor esté centrado */
-    }
-    .content-contact .title {
-        text-align: center;
-        margin: 0 auto; /* Centra el título horizontalmente */
-        font-size: 40px;
-    }
-    .header-about .header-content-about h2 {
-        width: 100%;
-        left: 58%;
-    }
-    .service{
-        padding: 20px;
-    }
-    @keyframes slideIn {
-        from {
-            right: -100px;
-        }
-    
-        /* Empieza fuera de la pantalla */
-        to {
-            right: 30px;
-        }
-    
-        /* Termina en la posición deseada */
-    }
 }
