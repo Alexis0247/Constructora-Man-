@@ -416,7 +416,7 @@ a{
 .content-contact {
     padding: 100px;
     background: #DED6D1;
-    height: 75vb !important;
+    height: 80vb !important;
 }
 
 .content-contact p {
@@ -433,6 +433,36 @@ a{
 
 }
 
+
+footer {
+    position: relative;
+    padding: 20px;
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color del texto */
+}
+.footer{
+    width: 82%;
+}
+
+.new-footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px; /* Tamaño de la fuente */
+}
+
+.left-content {
+    margin-left: 20px; /* Margen izquierdo para separar del borde */
+}
+
+.right-content {
+    margin-right: 20px; /* Margen derecho para separar del borde */
+}
+.footer-line {
+    border: none;
+    border-top: 1px solid #090C08; /* Color de la raya */
+    margin: 67px 0; /* Espaciado arriba y abajo de la línea */
+}
 
 
 /*FIN DE CONTACTOS*/
@@ -595,5 +625,19 @@ a{
         }
     
         /* Termina en la posición deseada */
+    }
+    .new-footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-content,
+    .right-content {
+        margin: 10px 0; /* Margen para separar los elementos verticalmente */
+        margin-left: 0; /* Quita el margen izquierdo en móviles */
+        margin-right: 0; /* Quita el margen derecho en móviles */
+    }
+    .footer-line{
+        margin: 15px 0;
     }
 } 
