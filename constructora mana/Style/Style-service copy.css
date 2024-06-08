@@ -145,26 +145,6 @@ p {
     background-color: #09A603;
 }
 
-.call-us {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 100px;
-}
-
-.call-text {
-    margin-right: 10px;
-    color: #DED6D1;
-    padding-right: 10px;
-    border-right: 3px solid #DED6D1;
-    font-size: 25px;
-}
-
-.phone-number {
-    font-size: 25px;
-    color: #DED6D1;
-}
-
 .card {
     width: fit-content;
     height: fit-content;
@@ -348,14 +328,17 @@ footer {
 
 @media screen and (max-width: 768px) {
     p {
-        padding: 10px;
         text-align: justify;
     }
     .logo img {
         width: 80px;
     }
     .title {
+        text-align: center;
+        padding-left: 0;
         font-size: 28px;
+        margin-top: 110px;
+        margin-bottom: 20px;
     }
     iframe {
         width: 100%;
@@ -371,6 +354,7 @@ footer {
     .content-contact .title {
         text-align: center;
         font-size: 30px;
+        margin: 30px;
     }
     .header-content {
         width: 90%;
@@ -435,6 +419,12 @@ footer {
         margin: 15px 0;
     }
     .content-contact {
-    height: 90vh;
+    height: auto;
+    }
+    .header-about {
+        height: 40vh;
+    }
+    .principal{
+        color: #090C08;
     }
 }

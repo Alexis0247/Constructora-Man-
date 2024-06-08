@@ -21,7 +21,7 @@ body {
 }
 
 .content {
-    height: 50vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,13 +37,14 @@ p {
 }
 
 .title {
-    margin-bottom: 40px;
     font-size: 60px;
     font-weight: 600;
+    position: relative;
+    top: 15%;
     text-transform: uppercase;
-    color: white;
-    width: 100%; /* Asegura que el título ocupe todo el ancho del contenedor */
-    text-align: center; /* Centra el título */
+    color: #090C08;
+    width: 100%;
+    text-align: center;
 }
 
 .header {
@@ -60,7 +61,7 @@ p {
     background: #090C08;
     position: fixed;
     width: 100%;
-    z-index: 100;
+    z-index: 1;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
 }
 
@@ -218,7 +219,7 @@ p {
 .content-about-more {
     padding: 100px 200px;
     background: #090C08;
-    height: auto !important;
+    height: auto;
 }
 
 .content-about-more p {
@@ -242,7 +243,7 @@ p {
 .content-contact {
     padding: 100px;
     background: #DED6D1;
-    height: 86vh !important;
+    height: 86vh;
     text-align: center;
 }
 
@@ -338,6 +339,8 @@ footer {
         text-align: center;
         padding-left: 0;
         font-size: 35px;
+        margin-top: 110px;
+        margin-bottom: 20px;
     }
 
     iframe {
@@ -364,10 +367,12 @@ footer {
 
     .content-contact {
         padding: 0px;
+        height: auto;
     }
 
     .content-contact .title {
         font-size: 30px;
+        margin-top: 20px;
     }
 
     .header-about .header-content-about h2 {
@@ -376,7 +381,7 @@ footer {
         top: 22%;
     }
     .content{
-        height: 30vh;
+        height: auto;
     }
     @keyframes slideIn {
         from {
