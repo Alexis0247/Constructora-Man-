@@ -10,7 +10,6 @@
     height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
 }
@@ -25,6 +24,7 @@ p {
 
 .title {
     margin-bottom: 40px;
+    margin-top: 40px;
     font-size: 60px;
     font-weight: 600;
     text-transform: uppercase;
@@ -222,7 +222,7 @@ h3 {
 /*APARTADO DEL HEADER*/
 
 .header {
-    height: 150vh !important;
+    height: 150vh;
     background: url(../img/img_fondo.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
@@ -296,6 +296,8 @@ p {
     height: auto;
     align-items: center;
     /* Centra el contenido verticalmente */
+    overflow: hidden; /* Evita que se genere scroll adicional */
+
 }
 
 .service-content {
@@ -435,7 +437,7 @@ p {
     padding: 0%;
     margin: 0%;
     background: #090C08;
-    height: 100vb !important;
+    height: 100vb;
     align-items: center;
     align-content: center;
 
@@ -444,6 +446,8 @@ p {
 .content-how-we-work {
     display: flex;
     align-items: center;
+    overflow: hidden; /* Evita que se genere scroll adicional */
+
     /* Centra el contenido verticalmente */
 }
 
@@ -494,7 +498,7 @@ p {
 .content-about {
     padding: 100px;
     background: #DED6D1;
-    height: 70vb !important;
+    height: 70vb 
 }
 
 .content-about .title {
@@ -615,11 +619,11 @@ footer {
         font-size: 35px;
     }
     .content-service .title{
-        position: absolute;
-        top: 5%;
+    margin-bottom: 5px;
+    margin-top: 0px;
     }
     .header {
-        height: 100vh !important; /* Ajusta la altura en móviles si es necesario */
+        height: 100vh;  /* Ajusta la altura en móviles si es necesario */
         background-size: cover;
         padding: 20px;
         width: auto;
@@ -644,17 +648,18 @@ footer {
         font-size: 30px;
     }
     .content-contact {
-        height: 82vh;
+        height: auto;
     }
     .content-service, .content-about, .content-contact, .how-we-work {
         padding: 20px;
+        height: auto;
     }
     .content-service{
-        height: 70vh;
+        height: auto;
     }
 
     .content-about {
-        height: 100vh !important;
+        height: auto;
     }
     .how-we-work .image-area {
         width: 100%;
@@ -678,7 +683,7 @@ footer {
     }
     .content-carousel {
         bottom: 40px;
-        left: 25px;
+        left: 0px;
     }
     .whatsapp-btn {
         right: 20px;
