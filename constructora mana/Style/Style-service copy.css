@@ -27,7 +27,8 @@ p {
     margin-bottom: 40px;
     font-size: 20px;
     color: white;
-    line-height: 2;
+    line-height: 1.5;
+    font-family: Metropolis, Metropolis-Fallback, Noto Color Emoji, sans-serif;
 }
 
 .title {
@@ -36,6 +37,8 @@ p {
     font-weight: 600;
     text-transform: uppercase;
     color: white;
+    font-family: Abril FatFace, Abril-FatFace-Fallback, Noto Color Emoji, serif;
+
 }
 
 .header, .content-service, .how-we-work, .content-about {

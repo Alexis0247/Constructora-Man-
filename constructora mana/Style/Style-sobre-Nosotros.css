@@ -32,8 +32,10 @@ p {
     margin-bottom: 40px;
     font-size: 18px;
     color: white;
-    line-height: 2;
+    line-height: 1.5;
     text-align: justify;
+    font-family: Metropolis, Metropolis-Fallback, Noto Color Emoji, sans-serif;
+
 }
 
 .title {
@@ -45,6 +47,8 @@ p {
     color: #090C08;
     width: 100%;
     text-align: center;
+    font-family: Abril FatFace, Abril-FatFace-Fallback, Noto Color Emoji, serif;
+
 }
 
 .header {
@@ -260,6 +264,7 @@ p {
     text-transform: uppercase;
     width: 100%;
     text-align: center;
+    
 }
 
 footer {
@@ -326,6 +331,7 @@ footer {
     p {
         padding: 10px;
         text-align: justify;
+        font-family: Metropolis, Metropolis-Fallback, Noto Color Emoji, sans-serif;
     }
 
     .logo img {

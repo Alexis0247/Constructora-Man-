@@ -27,7 +27,7 @@ p {
     margin-bottom: 40px;
     font-size: 18px;
     color: white;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 .title {
@@ -37,6 +37,8 @@ p {
     color: white;
     width: 100%; /* Asegura que el título ocupe todo el ancho del contenedor */
     text-align: center; /* Centra el título */
+    font-family: Abril FatFace, Abril-FatFace-Fallback, Noto Color Emoji, serif;
+
 }
 
 .header {
@@ -455,6 +457,7 @@ footer {
     p {
         padding: 10px;
         text-align: center;
+        font-family: Metropolis, Metropolis-Fallback, Noto Color Emoji, sans-serif;
     }
 
     .logo img {
@@ -493,6 +496,7 @@ footer {
         font-size: 32px;
         padding: 0;
         padding-bottom: 20px;
+        margin: 20px;
     }
 
     .content-contact {
