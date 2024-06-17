@@ -432,13 +432,14 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin-top: 78px;
 }
 
 .how-we-work {
     padding: 0%;
     margin: 0%;
     background: #090C08;
-    height: 100vb;
+    height: 80vb;
     align-items: center;
     align-content: center;
 
