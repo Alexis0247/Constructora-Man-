@@ -637,13 +637,21 @@ footer {
     margin-top: 0px;
     }
     .header {
-        height: 100vh;  /* Ajusta la altura en móviles si es necesario */
+        height: 89vh;  /* Ajusta la altura en móviles si es necesario */
         background-size: cover;
         padding: 20px;
         width: auto;
     }
+    .header {
+        background: url(../img/maquinaria-1.jpg) no-repeat center;
+        background-size: 100% cover; /* 80% del contenedor en ancho, altura auto */
+        background-attachment: fixed;
+        background-position: center;
+    }
+    
     .header-content {
         left: 50%; /* Centra horizontalmente */
+        transform: translate(-50%, -40%);
     }
     .header-content p {
         font-size: 23px;
