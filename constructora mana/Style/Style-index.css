@@ -224,13 +224,24 @@ h3 {
 
 .header {
     height: 150vh;
-    background: url(../img/img_fondo.jpg) no-repeat center;
+    background: url(../img/maquinaria-1.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    width: 100%; /* Asegúrate de que el header ocupe el 100% del ancho */
+    background-position: center 10px; 
+    width: 110%; /* Asegúrate de que el header ocupe el 100% del ancho */
     margin: 0; /* Elimina cualquier margen que podría causar desbordamiento */
     padding: 0; /* Elimina cualquier padding que podría causar desbordamiento */
 }
+
+@media only screen and (max-width: 300px) {
+    .header {
+        height: 500px; /* Ajusta la altura para móviles */
+        width: 60%; /* Ajusta el ancho para móviles */
+        background-size: 200px 200px; /* Ajusta el tamaño del fondo en píxeles */
+        background-attachment: scroll; /* Desactiva el fondo fijo en móviles */
+    }
+}
+
 
 .btn-home {
     display: flex;
@@ -238,7 +249,7 @@ h3 {
     /* Asegura que el botón esté por encima del encabezado */
 }
 .btn-home .btn-btn{
-    width: 20%;
+    width: 55%;
 }
 
 .title {
@@ -255,12 +266,13 @@ h3 {
     /* Coloca el contenido en el centro verticalmente */
     left: 50%;
     /* Coloca el contenido en el centro horizontalmente */
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -10%);
     /* Centra el contenido */
     text-align: center;
     /* Alinea el texto al centro */
     color: white;
     /* Color del texto */
+    padding-top: 40px;
 }
 
 .header-content .btn {
@@ -637,7 +649,7 @@ footer {
         font-size: 23px;
     }
     .btn-home .btn-btn {
-        width: 50%;
+        width: 70%;
     }
     .content-how-we-work {
         flex-direction: column;
