@@ -643,10 +643,11 @@ footer {
         width: auto;
     }
     .header {
-        background: url(../img/maquinaria-1.jpg) no-repeat center;
-        background-size: 100% cover; /* 80% del contenedor en ancho, altura auto */
+        background: url(../img/maquinaria-1.jpg) no-repeat bottom center;
+        background-size: 100% cover;
         background-attachment: fixed;
         background-position: center;
+
     }
     
     .header-content {
@@ -750,5 +751,28 @@ footer {
     }
     .footer-line{
         margin: 15px 0;
+    }
+}
+
+/*para que quede bien con telefonos pequeños*/
+@media screen and (max-width: 690px) and (max-height: 800px) {
+    
+    .header {
+        background: url(../img/maquinaria-1.jpg) no-repeat bottom center;
+        background-size: 100% cover; /* 80% del contenedor en ancho, altura auto */
+        background-attachment: fixed;
+        background-position: center 25px; /*solo se modifica la cantidad de pixeles que se quiere bajar la imagen*/
+
+    }
+}
+
+/*para que quede bien con ipad-mini*/
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+
+    .header {
+        background: url(../img/maquinaria-1.jpg) no-repeat bottom center;
+        background-size: 165%;
+        background-attachment: fixed;
+        background-position: center;
     }
 }
