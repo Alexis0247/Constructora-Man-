@@ -257,6 +257,7 @@ p {
 }
 
 .content-contact .title {
+    position: static;
     color: #090C08;
     margin-bottom: 55px;
     font-size: 60px;
