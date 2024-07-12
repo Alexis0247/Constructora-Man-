@@ -197,9 +197,9 @@ h3 {
 
 .schedule_box_container2 {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 5%;
-    transform: translateY(-50%);
+    transform: translateY(-44%);
     background-color: white;
     width: 40%;
     padding: 0px;
@@ -306,12 +306,12 @@ h3 {
 .schedule_box_container1{
     display: inline-block;
     position: absolute;
-    top: 56%;
+    top: 50%;
     right: 10%;
-    transform: translateY(-50%);
+    transform: translateY(-60%);
     padding: 20px;
     width: 30%;
-    height: 79%;
+    height: 35%;
 }
 h2{
     color: #f9f9f9;
