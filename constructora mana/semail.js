@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
       if (!isEmpty) {
         // Realizar una solicitud fetch al script de Google Apps Script
-        fetch("https://script.google.com/macros/s/AKfycbwMG4mudekNmSOD8GuYNkOjtP4ILT0C8wL1AUeL3hg-M1YnMRFm-0e0Au0Igphc_hYINw/exec", {
+        fetch("https://script.google.com/macros/s/AKfycbxuFOwUaNrqN4u7EoMcM2VtgDxb3ERu_06ZDR4_TKd4WwO6BiHiDlXfRUCryBc35TFa/exec", {
           method: "POST",
           body: formData // Envía los datos del formulario
         })

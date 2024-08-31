@@ -197,7 +197,7 @@ h3 {
 
 .schedule_box_container2 {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 5%;
     transform: translateY(-44%);
     background-color: white;
@@ -227,6 +227,15 @@ h3 {
     outline: none;
 }
 
+.input-container input[type="email"] {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #242020;
+    padding: 14px 0;
+    background-color: transparent;
+    outline: none;
+}
 .input-container .label {
     position: absolute;
     top: 0;
@@ -238,6 +247,12 @@ h3 {
 
 .input-container input[type="text"]:focus~.label,
 .input-container input[type="text"]:valid~.label {
+    top: -20px;
+    font-size: 16px;
+    color: #0ac604;
+}
+.input-container input[type="email"]:focus~.label,
+.input-container input[type="email"]:valid~.label {
     top: -20px;
     font-size: 16px;
     color: #0ac604;
@@ -258,6 +273,12 @@ h3 {
 .input-container input[type="text"]:valid~.underline {
     transform: scaleX(1);
 }
+
+.input-container input[type="email"]:focus~.underline,
+.input-container input[type="email"]:valid~.underline {
+    transform: scaleX(1);
+}
+
 .input-container {
     position: relative;
     margin: 30px auto;
@@ -326,7 +347,7 @@ h2{
 }
 
 .content-contacto {
-    padding: 120px;
+    padding: 150px;
     background: #090C08;
     height: 70vb !important;
 }
@@ -583,6 +604,7 @@ footer {
     .input-container,
     .input-container label,
     .input-container input[type="text"],
+    .input-container input[type="email"],
     .input-container textarea,
     .date-input {
         width: 100%;
